@@ -1,0 +1,1665 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>My Warehouse — things I buy &amp; recommend</title>
+<meta name="description" content="A curated collection of things I've bought and genuinely like — clothes, shoes, wallets and more, with my honest take and links to buy.">
+<meta name="theme-color" content="#0a0a0c">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Welcome to my warehouse">
+<meta property="og:description" content="Things I've bought, used and genuinely like — with my honest take and where to get them.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230d0d0f'/%3E%3Cpath d='M32 9l5.5 17.5L55 32l-17.5 5.5L32 55l-5.5-17.5L9 32l17.5-5.5z' fill='%23cdd3dc'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#0a0a0c;--bg2:#101013;--surface:#15151a;--surface2:#1c1c22;--surface3:#26262e;
+  --line:rgba(255,255,255,.07);--line2:rgba(255,255,255,.12);
+  --text:#f2f3f5;--muted:#a3a8b1;--dim:#6c717b;
+  --accent:#c9ced6;--accent2:#eef0f3;--accent3:#8d939e;
+  --accent-grad:linear-gradient(135deg,#ffffff 0%,#e6e8ec 28%,#b9bfc8 62%,#8f96a1 100%);
+  --accent-text:linear-gradient(180deg,#ffffff 10%,#d5d9df 55%,#9aa1ac 100%);
+  --accent-soft:rgba(205,211,220,.06);--accent-line:rgba(205,211,220,.3);
+  --danger:#ef7564;--ok:#6fcf97;
+  --r:18px;--r-sm:12px;
+  --display:'Montserrat','Inter',system-ui,sans-serif;
+  --sans:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --shadow:0 30px 60px -20px rgba(0,0,0,.75);
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased;min-height:100vh;overflow-x:hidden}
+body.lock{overflow:hidden}
+img{display:block;max-width:100%}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+input,select,textarea{font:inherit;color:var(--text);background:#0e0e12;border:1px solid var(--line2);border-radius:var(--r-sm);padding:11px 14px;width:100%;outline:none;transition:border-color .2s,box-shadow .2s,background .2s}
+input:focus,select:focus,textarea:focus{border-color:var(--accent-line);box-shadow:0 0 0 3px rgba(205,211,220,.14);background:#111116}
+input::placeholder,textarea::placeholder{color:var(--dim)}
+input[type=number]{-moz-appearance:textfield}
+input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}
+input[type=search]::-webkit-search-cancel-button{-webkit-appearance:none;display:none}
+textarea{resize:vertical;min-height:88px;line-height:1.5}
+select option{background:var(--surface);color:var(--text)}
+::selection{background:rgba(205,211,220,.35)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+input:focus-visible,select:focus-visible,textarea:focus-visible{outline:none}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 24px}
+.ic{flex:none}
+.muted{color:var(--muted)}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:96px 0 68px;text-align:center}
+.hero::after{content:"";position:absolute;left:50%;bottom:0;width:min(620px,80%);height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--accent-line),transparent)}
+.hero-bg{position:absolute;inset:0;pointer-events:none}
+.orb{position:absolute;border-radius:50%;filter:blur(70px)}
+.o1{width:620px;height:620px;left:50%;top:-330px;transform:translateX(-50%);background:radial-gradient(circle,rgba(196,206,222,.24),rgba(196,206,222,0) 68%);animation:drift 16s ease-in-out infinite alternate}
+.o2{width:420px;height:420px;right:-160px;bottom:-240px;background:radial-gradient(circle,rgba(140,155,180,.22),transparent 70%);animation:drift2 20s ease-in-out infinite alternate}
+.o3{width:300px;height:300px;left:-120px;top:40px;background:radial-gradient(circle,rgba(226,232,242,.12),transparent 70%);animation:drift2 24s ease-in-out infinite alternate-reverse}
+.grain{position:absolute;inset:0;opacity:.06;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.hero-inner{position:relative}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:22px;animation:rise .8s var(--ease) both}
+.eyebrow.sm{font-size:10.5px;letter-spacing:.22em;margin-bottom:4px;animation:none}
+.spark{display:inline-block;animation:twinkle 3.2s ease-in-out infinite}
+.spark+.spark,.eyebrow .spark:last-child{animation-delay:1.6s}
+.hero h1{font-family:var(--display);font-weight:300;font-size:clamp(34px,6.4vw,82px);line-height:1.04;letter-spacing:-.035em;animation:rise .9s .05s var(--ease) both}
+.hero h1 em{display:inline-block;font-style:normal;font-weight:800;background:var(--accent-text);-webkit-background-clip:text;background-clip:text;color:transparent;padding:0 .04em .06em;filter:drop-shadow(0 6px 30px rgba(205,211,220,.18))}
+.lede{max-width:620px;margin:22px auto 0;color:var(--muted);font-size:clamp(15px,1.6vw,17.5px);animation:rise .9s .15s var(--ease) both}
+.stats{display:inline-flex;margin-top:40px;border:1px solid var(--line2);border-radius:999px;background:rgba(255,255,255,.025);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);animation:rise .9s .25s var(--ease) both}
+.stats>div{padding:12px 28px;display:flex;flex-direction:column;align-items:center;gap:3px}
+.stats>div+div{border-left:1px solid var(--line2)}
+.stats b{font-variant-numeric:lining-nums;font-family:var(--display);font-size:24px;font-weight:700;letter-spacing:-.02em;line-height:1;color:var(--accent2)}
+.stats b small{font-size:.62em;margin-left:2px}
+.stats span{font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--dim)}
+
+/* ---------- toolbar ---------- */
+.toolbar{position:sticky;top:0;z-index:30;padding:14px 0 8px;background:rgba(10,10,12,.78);-webkit-backdrop-filter:saturate(140%) blur(16px);backdrop-filter:saturate(140%) blur(16px);border-bottom:1px solid transparent;transition:border-color .3s,box-shadow .3s}
+.toolbar.stuck{border-bottom-color:var(--line);box-shadow:0 12px 30px -18px rgba(0,0,0,.9)}
+.tb-row{display:flex;gap:12px;align-items:center}
+.search{flex:1;min-width:0;position:relative;display:flex;align-items:center}
+.search>.ic{position:absolute;left:17px;color:var(--dim);pointer-events:none}
+.search input{padding:13px 46px 13px 48px;border-radius:999px;background:var(--surface);border-color:var(--line2)}
+.search .clear{position:absolute;right:8px;width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:var(--muted)}
+.search .clear:hover{background:var(--surface3);color:var(--text)}
+.kbd{position:absolute;right:16px;font:600 11px/1 var(--sans);color:var(--dim);border:1px solid var(--line2);border-radius:6px;padding:4px 7px;pointer-events:none}
+.sort{width:auto;flex:none;border-radius:999px;padding:13px 42px 13px 20px;background:var(--surface) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23cdd3dc' stroke-width='2.5' stroke-linecap='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 18px center;-webkit-appearance:none;appearance:none;border-color:var(--line2);cursor:pointer;font-weight:500}
+.sort-wrap{position:relative;flex:none;display:flex}
+.sort-wrap>.ic{display:none}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:12px 2px 6px;scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 36px),transparent)}
+.chips::-webkit-scrollbar{display:none}
+.chips::after{content:"";flex:0 0 24px}
+.chip{flex:none;padding:8px 16px;border-radius:999px;border:1px solid var(--line2);color:var(--muted);font-size:13.5px;font-weight:500;transition:color .25s,border-color .25s,background .25s,box-shadow .25s;white-space:nowrap;display:inline-flex;gap:8px;align-items:center}
+.chip:hover{color:var(--text);border-color:var(--accent-line)}
+.chip.on{background:var(--accent-grad);color:#111215;border-color:transparent;font-weight:600;box-shadow:0 8px 22px -10px rgba(205,211,220,.7)}
+.chip .n{font-size:11.5px;opacity:.65}
+.chip.sm{padding:5px 12px;font-size:12.5px}
+
+/* ---------- grid + cards ---------- */
+.main{padding-top:26px;padding-bottom:90px;min-height:50vh}
+.app.is-admin .main{padding-bottom:140px}
+.result-line{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13.5px;margin-bottom:18px}
+.link-btn{color:var(--accent);text-decoration:underline;text-underline-offset:3px;font-size:13.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:24px}
+.card{position:relative;display:flex;flex-direction:column;background:linear-gradient(180deg,var(--surface),var(--bg2));border:1px solid var(--line);border-radius:var(--r);overflow:hidden;cursor:pointer;transition:transform .4s var(--ease),border-color .4s,box-shadow .4s;animation:rise .6s var(--ease) both;outline-offset:3px}
+.card:hover{transform:translateY(-5px);border-color:rgba(205,211,220,.42);box-shadow:0 22px 44px -22px rgba(0,0,0,.9),0 14px 44px -18px rgba(205,211,220,.22)}
+.thumb{position:relative;aspect-ratio:4/5;background:#17171c;overflow:hidden}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .9s var(--ease),opacity .6s}
+.thumb::after{content:"";position:absolute;inset:auto 0 0;height:40%;background:linear-gradient(0deg,rgba(10,10,12,.45),transparent);pointer-events:none}
+.fit-contain.thumb,.g-slide.fit-contain,.ph-item.fit-contain{background:#f1f2f4}
+.fit-contain.thumb img{object-fit:contain;padding:9%}
+.fit-contain.thumb::after{display:none}
+.card:hover .thumb img.pic{transform:scale(1.06)}
+.thumb img.pic-alt{opacity:0}
+.card:hover .thumb img.pic-alt{opacity:1}
+.badge{display:inline-flex;align-items:center;gap:5px;font-size:11.5px;font-weight:700;padding:5px 10px;border-radius:999px;letter-spacing:.02em;line-height:1.2}
+.badge-off{position:absolute;top:12px;left:12px;z-index:2;background:var(--accent-grad);color:#111215;box-shadow:0 6px 16px -6px rgba(0,0,0,.6)}
+.badges-r{position:absolute;top:12px;right:12px;z-index:2;display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.badge-pick{background:rgba(10,10,12,.72);color:var(--accent2);border:1px solid var(--accent-line);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);font-weight:600}
+.badge-hidden{background:rgba(10,10,12,.85);color:var(--muted);border:1px solid var(--line2);font-weight:600}
+.card.is-hidden .thumb img{filter:grayscale(.75) brightness(.55)}
+.admin-tools{position:absolute;left:10px;right:10px;bottom:10px;z-index:3;display:flex;gap:8px;justify-content:flex-end;opacity:0;transform:translateY(6px);transition:opacity .25s,transform .25s}
+.card:hover .admin-tools,.card:focus-within .admin-tools{opacity:1;transform:none}
+@media (hover:none){.admin-tools{opacity:1;transform:none}}
+.tool{display:inline-flex;align-items:center;gap:6px;padding:7px 12px;border-radius:999px;background:rgba(10,10,12,.85);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);border:1px solid var(--line2);font-size:12.5px;font-weight:600;transition:.2s}
+.tool:hover{border-color:var(--accent-line);color:var(--accent2)}
+.tool.danger:hover{border-color:rgba(239,117,100,.55);color:var(--danger)}
+.card-body{padding:14px 16px 14px;display:flex;flex-direction:column;gap:6px;flex:1;min-width:0}
+.card-meta{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.card-meta>span:first-child{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mini-rating{color:var(--accent2);letter-spacing:0;flex:none}
+.card h3{font-family:var(--display);font-size:15.5px;font-weight:600;line-height:1.32;letter-spacing:-.01em;color:var(--text);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+.price-row{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 9px}
+.price{font-size:18px;font-weight:700;color:var(--accent2);letter-spacing:-.01em}
+.mrp{color:var(--dim);font-size:13px}
+.card-foot{margin-top:auto;padding-top:11px;display:flex;align-items:center;justify-content:space-between;gap:8px;border-top:1px solid var(--line)}
+.store{font-size:12.5px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}
+.buy-mini{flex:none;display:inline-flex;align-items:center;gap:4px;font-size:13px;font-weight:600;color:var(--accent);padding:4px 2px;transition:gap .25s,color .25s}
+.buy-mini:hover{color:var(--accent2);gap:7px}
+.buy-mini.muted{color:var(--dim)}
+.noimg{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;background:radial-gradient(circle at 50% 38%,#26262e,#141418 70%)}
+.noimg span{font-family:var(--display);font-size:52px;font-weight:700;line-height:1;color:var(--accent);opacity:.85}
+.noimg small{letter-spacing:.22em;text-transform:uppercase;font-size:10.5px;color:var(--dim);font-weight:600}
+.card.is-preview{cursor:default;animation:none}
+.card.is-preview:hover{transform:none}
+.card.is-preview a{pointer-events:none}
+.skeleton{pointer-events:none;animation:none}
+.skeleton .thumb,.skeleton i{background:linear-gradient(100deg,#15151a 30%,#212128 50%,#15151a 70%);background-size:300% 100%;animation:shimmer 1.5s linear infinite}
+.skeleton .thumb::after{display:none}
+.skeleton i{display:block;height:11px;border-radius:6px;width:45%}
+.skeleton i:nth-child(2){height:20px;width:85%}
+.skeleton i:nth-child(3){width:35%;height:16px}
+
+/* ---------- empty / notices ---------- */
+.empty{text-align:center;padding:72px 20px;display:flex;flex-direction:column;align-items:center;gap:14px;animation:rise .6s var(--ease) both}
+.empty-mark{width:84px;height:84px;border-radius:26px;display:grid;place-items:center;font-size:34px;color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-line);margin-bottom:6px}
+.empty h3{font-family:var(--display);font-size:26px;font-weight:700;line-height:1.2;letter-spacing:-.02em}
+.empty p{color:var(--muted);max-width:440px}
+.notice{padding:14px 18px;border-radius:14px;margin-bottom:20px;font-size:14px;border:1px solid var(--line2);background:var(--surface)}
+.notice.error{border-color:rgba(239,117,100,.4);color:#f4b3a8;background:rgba(239,117,100,.07)}
+
+/* ---------- buttons ---------- */
+.btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:11px 20px;border-radius:999px;font-weight:600;font-size:14px;line-height:1.2;border:1px solid transparent;white-space:nowrap;transition:transform .2s,box-shadow .25s,background .25s,border-color .25s,color .25s}
+.btn:active{transform:scale(.98)}
+.btn:disabled{opacity:.6;cursor:progress}
+.btn-accent{background:var(--accent-grad);color:#111215;box-shadow:0 10px 28px -12px rgba(205,211,220,.75),inset 0 1px 0 rgba(255,255,255,.35)}
+.btn-accent::after{content:"";position:absolute;inset:0;background:linear-gradient(110deg,transparent 30%,rgba(255,255,255,.5) 50%,transparent 70%);transform:translateX(-120%);transition:transform .9s var(--ease)}
+.btn-accent:hover{box-shadow:0 16px 36px -12px rgba(205,211,220,.95),inset 0 1px 0 rgba(255,255,255,.35);transform:translateY(-1px)}
+.btn-accent:hover::after{transform:translateX(120%)}
+.btn-ghost{border-color:var(--line2);background:rgba(255,255,255,.025)}
+.btn-ghost:hover{border-color:var(--accent-line);color:var(--accent2)}
+.btn-lg{padding:15px 26px;font-size:15px}
+.btn-sm{padding:8px 15px;font-size:13px}
+.btn-block{width:100%}
+.btn-icon{padding:0;width:44px;height:44px;flex:none}
+.btn-lg.btn-icon{width:52px;height:52px}
+.btn-sm.btn-icon{width:36px;height:36px}
+.btn-danger{background:#d6573f;color:#fff}
+.btn-danger:hover{background:#e4664d}
+.btn-danger-ghost{color:var(--danger);border-color:rgba(239,117,100,.35)}
+.btn-danger-ghost:hover{background:rgba(239,117,100,.08);border-color:rgba(239,117,100,.6)}
+
+/* ---------- modal ---------- */
+.overlay{position:fixed;inset:0;z-index:100;background:rgba(4,4,6,.74);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;animation:fade .25s ease both}
+.modal{position:relative;width:100%;max-height:calc(100vh - 48px);max-height:calc(100dvh - 48px);overflow:auto;overscroll-behavior:contain;background:linear-gradient(180deg,#18181d,#111115);border:1px solid var(--line2);border-radius:24px;box-shadow:var(--shadow),0 0 0 1px rgba(205,211,220,.05);animation:pop .4s var(--ease) both;outline:none}
+.modal-item{max-width:1080px}
+.modal-sm{max-width:430px}
+.modal-form{max-width:1100px;display:flex;flex-direction:column;overflow:hidden}
+.close{position:absolute;top:14px;right:14px;z-index:8;width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(10,10,12,.72);border:1px solid var(--line2);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);transition:transform .3s var(--ease),color .2s,border-color .2s}
+.close:hover{border-color:var(--accent-line);color:var(--accent2);transform:rotate(90deg)}
+.close.static{position:static;flex:none}
+
+/* ---------- product detail ---------- */
+.pd{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)}
+.pd-media{position:relative;background:#0d0d10;border-right:1px solid var(--line)}
+.gallery{position:sticky;top:0}
+.g-frame{position:relative}
+.g-strip{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;aspect-ratio:4/5}
+.g-strip::-webkit-scrollbar{display:none}
+.g-slide{flex:0 0 100%;scroll-snap-align:center;scroll-snap-stop:always;position:relative;background:#121216}
+.g-slide img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:filter .5s,transform .5s;-webkit-user-drag:none;user-select:none}
+.g-slide.fit-contain img{object-fit:contain;padding:7%}
+img.blurry{filter:blur(12px);transform:scale(1.04)}
+.g-nav{position:absolute;top:50%;margin-top:-22px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(10,10,12,.68);border:1px solid var(--line2);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);opacity:0;transition:opacity .25s,border-color .2s,color .2s}
+.gallery:hover .g-nav,.g-nav:focus-visible{opacity:1}
+.g-nav:hover{border-color:var(--accent-line);color:var(--accent2)}
+.g-nav.prev{left:14px}.g-nav.next{right:14px}
+.g-dots{position:absolute;bottom:16px;left:0;right:0;display:none;justify-content:center;gap:6px;pointer-events:none}
+.g-dots i{width:6px;height:6px;border-radius:3px;background:rgba(255,255,255,.4);transition:width .3s,background .3s}
+.g-dots i.on{width:20px;background:var(--accent)}
+.g-count{position:absolute;left:14px;bottom:14px;font-size:12px;font-weight:600;padding:4px 10px;border-radius:999px;background:rgba(10,10,12,.7);border:1px solid var(--line2);color:var(--muted)}
+.g-thumbs{display:flex;gap:8px;padding:12px;overflow-x:auto;scrollbar-width:thin}
+.g-thumbs button{flex:none;width:60px;height:72px;border-radius:10px;overflow:hidden;border:1.5px solid transparent;opacity:.5;transition:.2s;background:#121216}
+.g-thumbs button:hover{opacity:.85}
+.g-thumbs button.on{border-color:var(--accent);opacity:1}
+.g-thumbs img{width:100%;height:100%;object-fit:cover}
+.g-thumbs img.contain{object-fit:contain;background:#f1f2f4;padding:4px}
+.pd-info{padding:48px 44px 38px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.pd-eyebrow{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:600;padding-right:48px}
+.pd-title{font-family:var(--display);font-weight:700;font-size:clamp(24px,2.5vw,34px);line-height:1.15;letter-spacing:-.025em;margin-top:-4px;overflow-wrap:anywhere}
+.pd-rating{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:13.5px}
+.pd-price{display:flex;align-items:baseline;flex-wrap:wrap;gap:8px 14px;padding:18px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.price.big{font-variant-numeric:lining-nums;font-family:var(--display);font-size:30px;font-weight:700;line-height:1;letter-spacing:-.02em}
+.pd-price .mrp{font-size:16px}
+.save{font-size:12.5px;font-weight:600;color:var(--ok);background:rgba(111,207,151,.1);border:1px solid rgba(111,207,151,.2);padding:4px 11px;border-radius:999px}
+.pd-actions{display:flex;gap:10px}
+.pd-actions .btn-accent{flex:1}
+.no-link{flex:1;display:flex;align-items:center;justify-content:center;border:1px dashed var(--line2);border-radius:999px;color:var(--dim);font-size:13.5px;padding:0 16px}
+.pd-review{position:relative;padding:20px 22px 20px 24px;border-radius:16px;background:var(--accent-soft);border:1px solid rgba(205,211,220,.18);margin-top:6px}
+.pd-review::before{content:"\201C";position:absolute;top:-18px;left:16px;font-family:var(--display);font-weight:800;font-size:56px;line-height:1;color:var(--accent)}
+.q-label{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:6px}
+.pd-review p{font-size:16px;line-height:1.65;color:#e4e7ec;white-space:pre-line;overflow-wrap:anywhere}
+.pd-specs{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+.pd-specs>div{background:#15151a;padding:12px 15px;min-width:0}
+.pd-specs>div:last-child:nth-child(odd){grid-column:span 2}
+.pd-specs dt{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);font-weight:600}
+.pd-specs dd{font-weight:500;margin-top:2px;overflow-wrap:anywhere}
+.pd-tags{display:flex;flex-wrap:wrap;gap:8px}
+.tag{font-size:12.5px;color:var(--muted);padding:5px 12px;border-radius:999px;border:1px solid var(--line2);transition:.2s}
+.tag:hover{color:var(--accent2);border-color:var(--accent-line)}
+.fine{font-size:12px;color:var(--dim)}
+
+/* ---------- forms ---------- */
+.field{display:flex;flex-direction:column;gap:7px;min-width:0}
+.f-label{font-size:12.5px;font-weight:600;color:#cdd1d8;letter-spacing:.01em}
+.f-hint{font-size:12px;color:var(--dim)}
+.f-err{font-size:12px;color:var(--danger);font-weight:500}
+.has-err input,.has-err textarea{border-color:rgba(239,117,100,.65)}
+.adorn{position:relative;display:flex;align-items:center}
+.adorn>span,.adorn>.ic{position:absolute;left:14px;color:var(--dim);pointer-events:none;font-weight:500}
+.adorn input{padding-left:36px}
+.row2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+.row3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.form-err{font-size:13px;color:#f4b3a8;background:rgba(239,117,100,.08);border:1px solid rgba(239,117,100,.3);border-radius:10px;padding:10px 12px;text-align:left}
+.login{padding:44px 34px 32px;display:flex;flex-direction:column;gap:14px;text-align:center}
+.login-mark{width:58px;height:58px;margin:0 auto 4px;border-radius:18px;display:grid;place-items:center;background:var(--accent-soft);border:1px solid var(--accent-line);color:var(--accent2);font-size:24px}
+.login h2{font-family:var(--display);font-size:26px;font-weight:700;line-height:1.2;letter-spacing:-.02em}
+.login p{font-size:14px}
+.login .field{text-align:left}
+.login .btn{margin-top:6px}
+.hint{font-size:12.5px;color:var(--dim)}
+.hint b{color:var(--accent2)}
+.mf-form{display:flex;flex-direction:column;min-height:0;flex:1}
+.mf-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 28px;border-bottom:1px solid var(--line)}
+.mf-head h2{font-family:var(--display);font-size:22px;font-weight:700;line-height:1.2;letter-spacing:-.02em}
+.mf-body{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;display:grid;grid-template-columns:minmax(0,1fr) 310px}
+.mf-main{padding:4px 28px 28px;min-width:0}
+.fs{padding:22px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+.fs:last-child{border-bottom:0}
+.fs h4{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:700}
+.cat-quick{display:flex;flex-wrap:wrap;gap:6px;margin-top:-4px}
+.mf-preview{border-left:1px solid var(--line);background:rgba(0,0,0,.2);padding:26px 24px}
+.mf-preview .sticky{position:sticky;top:26px;display:flex;flex-direction:column;gap:12px}
+.mf-foot{display:flex;align-items:center;justify-content:flex-end;gap:10px;padding:14px 28px;border-top:1px solid var(--line);background:rgba(10,10,12,.55)}
+.mf-foot .grow{flex:1;font-size:12.5px;color:var(--dim);min-width:0}
+.photos{border:1.5px dashed var(--line2);border-radius:16px;padding:14px;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,background .2s}
+.photos.drag{border-color:var(--accent);background:var(--accent-soft)}
+.ph-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(98px,1fr));gap:10px}
+.ph-item,.ph-add{position:relative;aspect-ratio:4/5;border-radius:12px;overflow:hidden;background:#121216;border:1px solid var(--line)}
+.ph-item img{width:100%;height:100%;object-fit:cover}
+.ph-item.fit-contain img{object-fit:contain;padding:7%}
+.ph-item.broken::after{content:"Broken link";position:absolute;inset:0;display:grid;place-items:center;background:rgba(40,14,10,.88);color:var(--danger);font-size:12px;font-weight:600}
+.ph-item.loading{display:grid;place-items:center}
+.cover-tag{position:absolute;top:6px;left:6px;font-size:9.5px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;background:var(--accent-grad);color:#111215;padding:3px 7px;border-radius:999px}
+.ph-tools{position:absolute;left:0;right:0;bottom:0;z-index:2;display:flex;justify-content:center;gap:4px;padding:18px 4px 6px;background:linear-gradient(0deg,rgba(0,0,0,.8),transparent)}
+.ph-tools button{width:26px;height:26px;border-radius:50%;display:grid;place-items:center;background:rgba(20,20,24,.92);border:1px solid var(--line2);font-size:12px;transition:.2s}
+.ph-tools button:hover{color:var(--accent2);border-color:var(--accent-line)}
+.ph-tools .danger:hover{color:var(--danger);border-color:rgba(239,117,100,.5)}
+.ph-add{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;color:var(--muted);border-style:dashed;border-color:var(--line2);transition:.2s;padding:6px;text-align:center}
+.ph-add:hover{color:var(--accent2);border-color:var(--accent-line);background:var(--accent-soft)}
+.ph-add span{font-weight:600;font-size:13px}
+.ph-add small{font-size:10.5px;color:var(--dim);line-height:1.3}
+.url-row{display:flex;align-items:center;gap:8px;padding:4px 4px 4px 14px;border:1px solid var(--line2);border-radius:999px;background:#0e0e12;color:var(--dim);transition:border-color .2s}
+.url-row:focus-within{border-color:var(--accent-line)}
+.url-row input,.url-row input:focus{border:0;background:transparent;padding:8px 4px;box-shadow:none;min-width:0}
+.fit-row{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted);flex-wrap:wrap}
+.seg{display:inline-flex;padding:3px;border-radius:999px;border:1px solid var(--line2);background:#0e0e12}
+.seg button{padding:6px 14px;border-radius:999px;font-size:12.5px;font-weight:600;color:var(--muted);transition:.2s}
+.seg button.on{background:var(--surface3);color:var(--accent2)}
+.spinner{width:22px;height:22px;border-radius:50%;border:2px solid var(--line2);border-top-color:var(--accent);animation:spin .8s linear infinite}
+.star-input{display:flex;align-items:center;gap:2px;flex-wrap:wrap}
+.star-input button{font-size:30px;line-height:1;color:#3a3a43;transition:transform .15s,color .15s;padding:2px}
+.star-input button.on{color:var(--accent);text-shadow:0 0 18px rgba(205,211,220,.35)}
+.star-input button:hover{transform:scale(1.15)}
+.star-label{margin-left:10px;font-size:13px;color:var(--muted)}
+.toggle{display:flex;align-items:center;gap:14px;cursor:pointer}
+.toggle input{position:absolute;opacity:0;pointer-events:none;width:1px;height:1px}
+.track{flex:none;width:46px;height:27px;border-radius:999px;background:#2a2a31;border:1px solid var(--line2);position:relative;transition:background .25s,border-color .25s}
+.knob{position:absolute;top:3px;left:3px;width:19px;height:19px;border-radius:50%;background:#8d877b;transition:left .25s var(--ease),background .25s}
+.toggle input:checked+.track{background:var(--accent-grad);border-color:transparent}
+.toggle input:checked+.track .knob{left:22px;background:#111215}
+.toggle input:focus-visible+.track{outline:2px solid var(--accent);outline-offset:2px}
+.t-text{display:flex;flex-direction:column;line-height:1.35}
+.t-text b{font-weight:600;font-size:14px}
+.t-text small{color:var(--dim);font-size:12.5px}
+.stars{position:relative;display:inline-block;line-height:1;letter-spacing:2px;white-space:nowrap}
+.s-base{color:#3a3a43}
+.s-fill{position:absolute;left:0;top:0;overflow:hidden;color:var(--accent)}
+.confirm{padding:34px 30px 26px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px}
+.confirm-ic{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;background:rgba(239,117,100,.1);border:1px solid rgba(239,117,100,.3);color:var(--danger);margin-bottom:4px}
+.confirm h3{font-family:var(--display);font-size:22px;font-weight:700;letter-spacing:-.02em}
+.confirm p{color:var(--muted);font-size:14px}
+.confirm-actions{display:flex;gap:10px;margin-top:12px;width:100%}
+.confirm-actions .btn{flex:1}
+
+/* ---------- about me ---------- */
+.avatar{position:relative;flex:none;display:inline-grid;place-items:center;border-radius:50%;overflow:hidden;background:var(--accent-grad);color:#111215;font-family:var(--display);font-weight:800;line-height:1}
+.avatar img{width:100%;height:100%;object-fit:cover}
+.av-sm{width:34px;height:34px;font-size:15px;box-shadow:0 0 0 1.5px rgba(255,255,255,.22)}
+.av-md{width:104px;height:104px;font-size:42px;box-shadow:0 0 0 4px var(--surface),0 0 0 5px var(--accent-line)}
+.av-lg{width:184px;height:184px;font-size:72px;box-shadow:0 0 0 7px #121216,0 0 0 8px var(--accent-line),0 30px 60px -20px rgba(0,0,0,.9)}
+.hero-inner{display:flex;flex-direction:column;align-items:center}
+.hero-profile{display:inline-flex;align-items:center;gap:10px;max-width:100%;padding:5px 8px 5px 5px;margin-bottom:26px;border-radius:999px;border:1px solid var(--line2);background:rgba(255,255,255,.03);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);animation:rise .8s var(--ease) both}
+.hp-me{display:inline-flex;align-items:center;gap:10px;font-size:13.5px;color:var(--muted);padding-right:4px;white-space:nowrap}
+.hp-me b{color:var(--text);font-weight:600;transition:color .2s}
+.hp-me:hover b{color:#fff}
+.hp-sep{flex:none;width:1px;height:20px;background:var(--line2)}
+.social-icons{display:flex;gap:2px}
+.social-ic{width:32px;height:32px;border-radius:50%;display:grid;place-items:center;color:var(--muted);transition:color .2s,background .2s}
+.social-ic:hover{color:#fff;background:rgba(255,255,255,.08)}
+.about{padding:10px 0 72px}
+.about-card{position:relative;overflow:hidden;display:grid;grid-template-columns:auto minmax(0,1fr);gap:56px;align-items:center;padding:56px 60px;border-radius:28px;border:1px solid var(--line2);background:radial-gradient(120% 140% at 0% 0%,rgba(205,211,220,.08),transparent 55%),linear-gradient(180deg,var(--surface),var(--bg2))}
+.about-card::before{content:"";position:absolute;top:-1px;left:10%;right:10%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent)}
+.about-photo{position:relative}
+.about-text{display:flex;flex-direction:column;gap:14px;align-items:flex-start;min-width:0}
+.about-text h2{font-family:var(--display);font-size:clamp(26px,3vw,38px);font-weight:700;letter-spacing:-.03em;line-height:1.1}
+.about-bio{color:var(--muted);font-size:16px;line-height:1.7;max-width:640px;white-space:pre-line;overflow-wrap:anywhere}
+.socials{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.social{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;border:1px solid var(--line2);font-size:13.5px;font-weight:600;background:rgba(255,255,255,.02);transition:border-color .2s,background .2s,transform .2s}
+.social:hover{border-color:var(--accent-line);background:rgba(255,255,255,.06);transform:translateY(-1px)}
+.about-edit{margin-top:6px}
+.about-empty{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;gap:12px;padding:48px 28px;border-style:dashed}
+.about-empty h2{font-family:var(--display);font-size:24px;font-weight:700;letter-spacing:-.02em}
+.about-empty p{max-width:460px}
+.modal-profile{max-width:700px;display:flex;flex-direction:column;overflow:hidden}
+.mf-body.single{grid-template-columns:minmax(0,1fr)}
+.pf-photo{display:flex;align-items:center;gap:24px}
+.pf-photo-actions{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+.pf-btns{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ---------- admin bar / toasts / footer ---------- */
+.admin-bar{position:fixed;left:50%;bottom:20px;transform:translateX(-50%);z-index:60;display:flex;align-items:center;gap:12px;padding:7px 7px 7px 18px;border-radius:999px;background:rgba(22,22,27,.9);-webkit-backdrop-filter:blur(16px);backdrop-filter:blur(16px);border:1px solid var(--accent-line);box-shadow:0 20px 50px -15px rgba(0,0,0,.95),0 0 36px -12px rgba(205,211,220,.4);animation:slideUp .5s var(--ease) both;max-width:calc(100% - 24px)}
+.ab-status{display:flex;align-items:center;gap:8px;font-weight:600;font-size:13px;color:var(--accent2);white-space:nowrap}
+.dot{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 4px rgba(111,207,151,.16)}
+.ab-count{font-size:12.5px;color:var(--muted);padding-left:12px;border-left:1px solid var(--line2);white-space:nowrap}
+.toasts{position:fixed;left:50%;bottom:96px;transform:translateX(-50%);z-index:300;display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:none;width:max-content;max-width:calc(100% - 32px)}
+.toast{background:rgba(26,26,32,.96);border:1px solid var(--accent-line);padding:11px 18px;border-radius:999px;font-size:13.5px;font-weight:500;box-shadow:var(--shadow);animation:toastIn .35s var(--ease) both;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);text-align:center}
+.toast .t-ic{color:var(--accent);margin-right:8px}
+.toast.error{border-color:rgba(239,117,100,.55)}
+.toast.error .t-ic{color:var(--danger)}
+.footer{position:relative;padding:44px 0 52px;text-align:center;color:var(--dim);font-size:13px}
+.footer::before{content:"";position:absolute;top:0;left:50%;width:min(620px,80%);height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,var(--line2),transparent)}
+.f-brand{font-family:var(--display);font-size:17px;font-weight:700;letter-spacing:.02em;color:var(--accent2);margin-bottom:6px}
+.footer p{max-width:520px;margin:0 auto}
+.f-copy{margin-top:10px!important;font-size:12px}
+
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes pop{from{opacity:0;transform:translateY(18px) scale(.98)}to{opacity:1;transform:none}}
+@keyframes drift{from{transform:translateX(-50%) translateY(0) scale(1)}to{transform:translateX(-44%) translateY(40px) scale(1.12)}}
+@keyframes drift2{from{transform:translate(0,0)}to{transform:translate(-70px,-50px)}}
+@keyframes twinkle{0%,100%{opacity:1;transform:scale(1) rotate(0)}50%{opacity:.35;transform:scale(.75) rotate(45deg)}}
+@keyframes shimmer{from{background-position:100% 0}to{background-position:-100% 0}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes slideUp{from{opacity:0;transform:translate(-50%,30px)}to{opacity:1;transform:translate(-50%,0)}}
+@keyframes toastIn{from{opacity:0;transform:translateY(12px) scale(.96)}to{opacity:1;transform:none}}
+
+@media (max-width:900px){
+  .pd{grid-template-columns:minmax(0,1fr)}
+  .pd-media{border-right:0;border-bottom:1px solid var(--line)}
+  .gallery{position:relative}
+  .g-strip{aspect-ratio:1/1}
+  .g-thumbs,.g-nav{display:none}
+  .g-dots{display:flex}
+  .g-count{bottom:auto;top:16px}
+  .pd-info{padding:28px 24px 30px}
+  .pd-eyebrow{padding-right:0}
+  .mf-body{grid-template-columns:minmax(0,1fr)}
+  .mf-preview{display:none}
+}
+@media (max-width:640px){
+  body{font-size:14.5px}
+  .wrap{padding:0 16px}
+  .hero{padding:66px 0 46px}
+  .eyebrow{font-size:10px;letter-spacing:.2em;gap:8px}
+  .stats{margin-top:30px}
+  .stats>div{padding:10px 13px}
+  .stats b{font-size:24px}
+  .stats span{font-size:9px;letter-spacing:.08em;white-space:nowrap}
+  .toolbar{padding-top:10px}
+  .tb-row{gap:8px}
+  .search input{padding:12px 38px 12px 42px}
+  .search>.ic{left:15px}
+  .kbd{display:none}
+  .sort-wrap{width:46px;height:46px;border-radius:50%;background:var(--surface);border:1px solid var(--line2);align-items:center;justify-content:center;color:var(--accent)}
+  .sort-wrap>.ic{display:block}
+  .sort-wrap .sort{position:absolute;inset:0;width:100%;height:100%;opacity:0;padding:0}
+  .sort-wrap.active::after{content:"";position:absolute;top:9px;right:9px;width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 2px var(--surface)}
+  .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+  .card{border-radius:15px}
+  .card-body{padding:10px 11px 11px;gap:4px}
+  .card-meta{font-size:9.5px;letter-spacing:.1em}
+  .card h3{font-size:13.5px}
+  .price{font-size:15px}
+  .mrp{font-size:11.5px}
+  .card-foot{padding-top:8px}
+  .store{font-size:11.5px}
+  .buy-mini{font-size:12px}
+  .badge{font-size:10px;padding:4px 7px}
+  .badge-off{top:8px;left:8px}
+  .badges-r{top:8px;right:8px;gap:4px}
+  .admin-tools{left:6px;right:6px;bottom:6px;gap:5px}
+  .tool{padding:6px 9px;font-size:11.5px}
+  .overlay{padding:0;align-items:stretch}
+  .modal{max-height:100vh;max-height:100dvh;height:100vh;height:100dvh;border-radius:0;border:0;animation:fade .25s ease both}
+  .ov-sm{padding:16px;align-items:center}
+  .modal-sm{height:auto;border-radius:22px;border:1px solid var(--line2)}
+  .pd-info{padding:22px 18px 104px}
+  .pd-actions{position:fixed;left:0;right:0;bottom:0;z-index:9;padding:14px 16px calc(14px + env(safe-area-inset-bottom));background:linear-gradient(0deg,#111115 62%,rgba(17,17,21,0))}
+  .price.big{font-size:26px}
+  .pd-review p{font-size:15px}
+  .mf-head{padding:14px 18px}
+  .mf-head h2{font-size:19px}
+  .mf-main{padding:0 18px 22px}
+  .mf-foot{padding:12px 18px calc(12px + env(safe-area-inset-bottom))}
+  .mf-foot .grow{display:none}
+  .mf-foot .btn{flex:1}
+  .row3{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .ph-grid{grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:8px}
+  .hero-profile{margin-bottom:20px}
+  .hp-me{font-size:12.5px}
+  .social-ic{width:30px;height:30px}
+  .social-icons a:nth-child(n+5){display:none}
+  .about{padding:4px 0 50px}
+  .about-card{grid-template-columns:minmax(0,1fr);justify-items:center;text-align:center;gap:24px;padding:38px 20px 30px;border-radius:22px}
+  .about-text{align-items:center}
+  .about-bio{font-size:15px}
+  .av-lg{width:128px;height:128px;font-size:52px}
+  .socials{justify-content:center}
+  .pf-photo{flex-direction:column;align-items:stretch;gap:16px}
+  .pf-photo>.avatar{align-self:center}
+  .admin-bar{bottom:calc(12px + env(safe-area-inset-bottom));gap:8px;padding-left:14px}
+  .ab-count{display:none}
+  .toasts{bottom:84px}
+  .login{padding:38px 22px 26px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
+}
+</style>
+</head>
+<body>
+<div id="root"></div>
+<noscript><p style="padding:40px;text-align:center">Please enable JavaScript to browse the warehouse.</p></noscript>
+
+<script src="https://unpkg.com/react@18.3.1/umd/react.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.production.min.js" crossorigin></script>
+<script src="https://unpkg.com/htm@3.1.1/dist/htm.umd.js" crossorigin></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore-compat.js"></script>
+<script>
+'use strict';
+/* =====================================================================
+   CONFIG — paste your Firebase web-app config here to go live.
+   While apiKey is empty the site runs in LOCAL DEMO MODE: items are
+   saved only in this browser and the admin password is "admin".
+   ===================================================================== */
+const FIREBASE_CONFIG = {
+  apiKey: "AIzaSyCAR1QRTVzGF5v15Z-nW3L46x4nwRYFS-U",
+  authDomain: "my-warehouse-97df4.firebaseapp.com",
+  projectId: "my-warehouse-97df4",
+  storageBucket: "my-warehouse-97df4.firebasestorage.app",
+  messagingSenderId: "133149941279",
+  appId: "1:133149941279:web:a7a0c40c941e45b442ff2a"
+};
+// Only this account may manage items (must match firestore.rules).
+const ADMIN_EMAIL = "mkothawa@gmail.com";
+const SITE_NAME = "My Warehouse";
+
+const { useState, useEffect, useMemo, useRef, useCallback } = React;
+const html = htm.bind(React.createElement);
+const USE_FIREBASE = !!(FIREBASE_CONFIG.apiKey && FIREBASE_CONFIG.projectId);
+const DEFAULT_CATEGORIES = ['Clothes', 'Shoes', 'Wallets', 'Bags', 'Watches', 'Accessories', 'Gadgets', 'Home', 'Beauty', 'Fitness'];
+const MAX_PHOTOS = 8;
+
+/* ---------------- helpers ---------------- */
+const inr = new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 });
+const money = n => (typeof n === 'number' && isFinite(n)) ? inr.format(n) : '';
+const toNum = v => { if (v === '' || v == null) return null; const n = Number(v); return isFinite(n) ? n : null; };
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+const pctOff = it => (it.price != null && it.mrp != null && it.mrp > it.price) ? Math.round((1 - it.price / it.mrp) * 100) : 0;
+const normalizeUrl = s => { s = (s || '').trim(); if (!s) return ''; return /^https?:\/\//i.test(s) ? s : 'https://' + s.replace(/^\/+/, ''); };
+const isValidUrl = s => { try { const u = new URL(s); return /^https?:$/.test(u.protocol) && u.hostname.includes('.'); } catch (e) { return false; } };
+const isPhotoRef = s => typeof s === 'string' && s.startsWith('photo:');
+const pidOf = s => s.slice(6);
+const thumbSrc = (item, entry) => isPhotoRef(entry) ? (item.thumbs[pidOf(entry)] || '') : entry;
+const photoPids = item => (item.images || []).filter(isPhotoRef).map(pidOf);
+
+const STORES = [
+  [/(^|\.)(amazon\.[a-z.]+|amzn\.(to|in|eu|com))$/, 'Amazon'], [/(^|\.)myntra\.com$/, 'Myntra'],
+  [/(^|\.)(flipkart\.com|fkrt\.it|fkrt\.cc)$/, 'Flipkart'], [/(^|\.)ajio\.com$/, 'AJIO'],
+  [/(^|\.)nykaa(fashion|man)?\.com$/, 'Nykaa'], [/(^|\.)meesho\.com$/, 'Meesho'], [/(^|\.)tatacliq\.com$/, 'Tata CLiQ'],
+  [/(^|\.)snapdeal\.com$/, 'Snapdeal'], [/(^|\.)nike\.com$/, 'Nike'], [/(^|\.)adidas\.[a-z.]+$/, 'Adidas'],
+  [/(^|\.)puma\.com$/, 'Puma'], [/(^|\.)hm\.com$/, 'H&M'], [/(^|\.)zara\.com$/, 'Zara'], [/(^|\.)uniqlo\.com$/, 'Uniqlo'],
+  [/(^|\.)decathlon\.[a-z.]+$/, 'Decathlon'], [/(^|\.)croma\.com$/, 'Croma'], [/(^|\.)reliancedigital\.in$/, 'Reliance Digital'],
+  [/(^|\.)lenskart\.com$/, 'Lenskart'], [/(^|\.)bewakoof\.com$/, 'Bewakoof'], [/(^|\.)thesouledstore\.com$/, 'The Souled Store'],
+  [/(^|\.)ikea\.com$/, 'IKEA'], [/(^|\.)apple\.com$/, 'Apple'], [/(^|\.)jiomart\.com$/, 'JioMart'], [/(^|\.)firstcry\.com$/, 'FirstCry'],
+  [/(^|\.)pepperfry\.com$/, 'Pepperfry'], [/(^|\.)etsy\.com$/, 'Etsy'], [/(^|\.)ebay\.[a-z.]+$/, 'eBay'],
+  [/(^|\.)instagram\.com$/, 'Instagram'], [/(^|\.)bigbasket\.com$/, 'BigBasket'], [/(^|\.)blinkit\.com$/, 'Blinkit'],
+  [/(^|\.)zeptonow\.com$/, 'Zepto'], [/(^|\.)westside\.com$/, 'Westside'], [/(^|\.)maxfashion\.(in|com)$/, 'Max'],
+  [/(^|\.)shoppersstop\.com$/, 'Shoppers Stop'], [/(^|\.)lifestylestores\.com$/, 'Lifestyle'], [/(^|\.)urbanic\.com$/, 'Urbanic'],
+];
+function storeFromUrl(url) {
+  let host;
+  try { host = new URL(normalizeUrl(url)).hostname.toLowerCase(); } catch (e) { return ''; }
+  host = host.replace(/^(www\d?|m|shop|store)\./, '');
+  for (const [re, name] of STORES) if (re.test(host)) return name;
+  const p = host.split('.');
+  const core = p.length > 2 && /^(co|com|net|org|ac)$/.test(p[p.length - 2]) ? p[p.length - 3] : (p[p.length - 2] || p[0]);
+  return core ? core.charAt(0).toUpperCase() + core.slice(1) : '';
+}
+
+function normItem(raw) {
+  const num = v => (v === '' || v == null || !isFinite(+v)) ? null : +v;
+  const images = Array.isArray(raw.images) ? raw.images.filter(Boolean) : (raw.img ? [raw.img] : []);
+  const link = raw.link || '';
+  return {
+    id: raw.id, name: raw.name || 'Untitled', brand: raw.brand || '', category: raw.category || 'Other',
+    price: num(raw.price), mrp: num(raw.mrp), link, store: raw.store || (link ? storeFromUrl(link) : ''),
+    images, thumbs: raw.thumbs || {}, fit: raw.fit === 'contain' ? 'contain' : 'cover',
+    rating: num(raw.rating) || 0, review: raw.review || '', size: raw.size || '', colour: raw.colour || '', material: raw.material || '',
+    tags: Array.isArray(raw.tags) ? raw.tags : [], featured: !!raw.featured, visible: raw.visible !== false,
+    createdAt: raw.createdAt || 0, updatedAt: raw.updatedAt || 0,
+  };
+}
+const SOCIALS = [
+  { key: 'instagram', label: 'Instagram', url: h => 'https://instagram.com/' + h, ph: '@yourhandle' },
+  { key: 'youtube', label: 'YouTube', url: h => 'https://youtube.com/@' + h, ph: '@yourchannel' },
+  { key: 'x', icon: 'xbrand', label: 'X', url: h => 'https://x.com/' + h, ph: '@yourhandle' },
+  { key: 'facebook', label: 'Facebook', url: h => 'https://facebook.com/' + h, ph: 'username or link' },
+  { key: 'pinterest', label: 'Pinterest', url: h => 'https://pinterest.com/' + h, ph: 'username or link' },
+  { key: 'linkedin', label: 'LinkedIn', url: h => 'https://linkedin.com/in/' + h, ph: 'username or link' },
+  { key: 'website', label: 'Website', url: h => normalizeUrl(h), ph: 'yoursite.com' },
+  { key: 'email', label: 'Email', url: h => 'mailto:' + h, ph: 'you@example.com' },
+];
+function socialHref(s, v) {
+  v = (v || '').trim();
+  if (!v) return '';
+  if (s.key === 'email') return 'mailto:' + v.replace(/^mailto:/i, '');
+  if (/^https?:\/\//i.test(v) || /^[\w-]+(\.[\w-]+)+\//.test(v)) return normalizeUrl(v);
+  return s.url(v.replace(/^@/, ''));
+}
+function normProfile(raw) {
+  raw = raw || {};
+  const links = {};
+  SOCIALS.forEach(s => { links[s.key] = (raw.links && raw.links[s.key]) || ''; });
+  return { name: raw.name || '', bio: raw.bio || '', photo: raw.photo || '', links };
+}
+const socialLinks = p => SOCIALS.map(s => ({ ...s, href: socialHref(s, p.links[s.key]) })).filter(s => s.href);
+const hasProfile = p => !!(p.name || p.bio || p.photo || socialLinks(p).length);
+const firstName = p => (p.name || '').trim().split(/\s+/)[0];
+const haystack = it => [it.name, it.brand, it.category, it.store, it.colour, it.material, it.size, it.review, ...it.tags].join(' ').toLowerCase();
+
+const byNew = (a, b) => (b.createdAt || 0) - (a.createdAt || 0);
+const SORTS = {
+  recommended: { label: 'Recommended', fn: (a, b) => (b.featured - a.featured) || byNew(a, b) },
+  newest: { label: 'Newest first', fn: byNew },
+  priceAsc: { label: 'Price: low to high', fn: (a, b) => (a.price ?? Infinity) - (b.price ?? Infinity) },
+  priceDesc: { label: 'Price: high to low', fn: (a, b) => (b.price ?? -Infinity) - (a.price ?? -Infinity) },
+  savings: { label: 'Biggest savings', fn: (a, b) => (pctOff(b) - pctOff(a)) || byNew(a, b) },
+  rating: { label: 'Top rated', fn: (a, b) => (b.rating - a.rating) || byNew(a, b) },
+};
+
+/* ---------------- images ---------------- */
+function loadImageFile(file) {
+  return new Promise((resolve, reject) => {
+    const url = URL.createObjectURL(file);
+    const img = new Image();
+    img.onload = () => { URL.revokeObjectURL(url); resolve(img); };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error(`Couldn't read "${file.name}". Try a JPG or PNG.`)); };
+    img.src = url;
+  });
+}
+function encodeImage(img, maxSide, quality, maxLen) {
+  const s = Math.min(1, maxSide / Math.max(img.naturalWidth, img.naturalHeight));
+  const w = Math.max(1, Math.round(img.naturalWidth * s)), h = Math.max(1, Math.round(img.naturalHeight * s));
+  const c = document.createElement('canvas');
+  c.width = w; c.height = h;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, w, h);
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(img, 0, 0, w, h);
+  let q = quality, out = c.toDataURL('image/jpeg', q);
+  while (out.length > maxLen && q > 0.45) { q -= 0.07; out = c.toDataURL('image/jpeg', q); }
+  return out;
+}
+// Each upload becomes a sharp full-size photo (own Firestore doc, loaded on demand)
+// plus a light thumbnail kept on the item so the grid loads fast.
+async function processUpload(file) {
+  const img = await loadImageFile(file);
+  return { pid: uid(), full: encodeImage(img, 1400, 0.82, 380000), thumb: encodeImage(img, 460, 0.72, 34000) };
+}
+
+// Profile photo: centre-cropped square, small enough to live on the profile doc.
+async function processAvatar(file) {
+  const img = await loadImageFile(file);
+  const s = Math.min(img.naturalWidth, img.naturalHeight), size = Math.min(480, s);
+  const c = document.createElement('canvas');
+  c.width = c.height = size;
+  const ctx = c.getContext('2d');
+  ctx.fillStyle = '#fff'; ctx.fillRect(0, 0, size, size);
+  ctx.imageSmoothingQuality = 'high';
+  ctx.drawImage(img, (img.naturalWidth - s) / 2, (img.naturalHeight - s) / 2, s, s, 0, 0, size, size);
+  return c.toDataURL('image/jpeg', 0.84);
+}
+
+/* ---------------- data backends ---------------- */
+const DEMO_PROFILE = {
+  name: 'Deepesh', photo: '',
+  bio: "Hi! I'm always hunting for well-made everyday things. Clothes, shoes, gadgets, anything that's worth the money.\nEverything here is something I've actually bought and used, with my honest take on it.",
+  links: { instagram: '@yourhandle', youtube: '@yourchannel', email: 'you@example.com' },
+};
+
+function demoItems() {
+  const now = Date.now(), d = 864e5;
+  const U = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=1000&q=75`;
+  return [
+    { id: 'demo-sneaker', name: 'Air Zoom Running Shoes', brand: 'Nike', category: 'Shoes', price: 7495, mrp: 11895, link: 'https://www.amazon.in/', images: [U('photo-1542291026-7eec264c27ff'), U('photo-1460353581641-37baddab0fa2')], rating: 5, review: "Light, bouncy and comfortable straight out of the box. 300+ km in and they still feel great.", size: 'UK 9', colour: 'University Red', material: 'Engineered mesh', tags: ['running', 'gym', 'daily wear'], featured: true, createdAt: now - 2 * d },
+    { id: 'demo-headphones', name: 'Wireless Noise-Cancelling Headphones', brand: 'Sony', category: 'Gadgets', price: 8990, mrp: 14990, link: 'https://www.flipkart.com/', images: [U('photo-1505740420928-5e560c06d30e')], rating: 5, review: 'Silences a whole flight. Battery easily lasts a week of commuting.', colour: 'Black', tags: ['travel', 'work from home'], featured: true, createdAt: now - 4 * d },
+    { id: 'demo-watch', name: 'Minimal Analog Watch', brand: 'Daniel Wellington', category: 'Watches', price: 4999, mrp: 8999, link: 'https://www.myntra.com/', images: [U('photo-1523275335684-37898b6baf30')], rating: 4, review: 'Clean dial that goes with everything, from office shirts to weekend tees.', colour: 'White / Silver', material: 'Stainless steel', tags: ['minimal', 'gift idea'], createdAt: now - 6 * d },
+    { id: 'demo-tee', name: 'Essential Cotton Crew Tee', brand: 'Uniqlo', category: 'Clothes', price: 990, mrp: 1490, link: 'https://www.uniqlo.com/in/', images: [U('photo-1521572163474-6864f9cf17ab')], rating: 4, review: 'Thick cotton that keeps its shape wash after wash. I own it in four colours.', size: 'M', colour: 'White', material: '100% cotton', tags: ['basics', 'summer'], createdAt: now - 9 * d },
+    { id: 'demo-sunglasses', name: 'Classic Aviator Sunglasses', brand: 'Ray-Ban', category: 'Accessories', price: 6290, mrp: 7890, link: 'https://www.lenskart.com/', images: [U('photo-1572635196237-14b3f281503f')], rating: 4, review: 'Timeless shape, great lenses, and they survived a beach trip.', colour: 'Gold / Green', material: 'Metal', tags: ['summer', 'travel'], createdAt: now - 12 * d },
+    { id: 'demo-backpack', name: 'Everyday Laptop Backpack', brand: 'Wildcraft', category: 'Bags', price: 2199, mrp: 3999, link: 'https://www.ajio.com/', images: [U('photo-1553062407-98eeb64c6a62')], rating: 5, review: 'Fits a 15" laptop, gym clothes and lunch. The zips are still perfect after a year.', colour: 'Charcoal', material: 'Polyester', tags: ['office', 'travel'], createdAt: now - 16 * d },
+    { id: 'demo-wallet', name: 'Slim Leather Bifold Wallet', brand: 'Tommy Hilfiger', category: 'Wallets', price: 1499, mrp: 2499, link: 'https://www.amazon.in/', images: [U('photo-1627123424574-724758594e93')], rating: 4, review: 'Holds 8 cards without bulging in the pocket. The leather ages beautifully.', colour: 'Tan', material: 'Genuine leather', tags: ['gift idea', 'everyday'], createdAt: now - 20 * d },
+    { id: 'demo-hoodie', name: 'Heavyweight Pullover Hoodie', brand: 'H&M', category: 'Clothes', price: 1999, mrp: null, link: 'https://www2.hm.com/', images: [U('photo-1556821840-3a63f95609a7')], rating: 0, review: '', size: 'L', colour: 'Ash grey', tags: ['winter'], createdAt: now - 26 * d },
+  ].map(i => ({ ...i, visible: true }));
+}
+
+function makeLocalBackend() {
+  const IK = 'mw_items_v1', PK = 'mw_photos_v1', AK = 'mw_demo_admin', MK = 'mw_profile_v1';
+  const subs = new Set(), auths = new Set(), profileSubs = new Set();
+  const read = (k, fallback) => { try { const v = JSON.parse(localStorage.getItem(k)); return v == null ? fallback() : v; } catch (e) { return fallback(); } };
+  const put = (k, v) => localStorage.setItem(k, JSON.stringify(v));
+  const items = () => read(IK, () => { const s = demoItems(); put(IK, s); return s; });
+  const photos = () => read(PK, () => ({}));
+  const emit = () => subs.forEach(f => f());
+  return {
+    mode: 'local',
+    onAuth(cb) { auths.add(cb); cb(sessionStorage.getItem(AK) ? { email: 'demo@local' } : null); return () => auths.delete(cb); },
+    async signIn(email, pw) {
+      if (pw !== 'admin') throw Object.assign(new Error('Wrong password'), { code: 'auth/invalid-credential' });
+      sessionStorage.setItem(AK, '1'); auths.forEach(cb => cb({ email }));
+    },
+    async signOut() { sessionStorage.removeItem(AK); auths.forEach(cb => cb(null)); },
+    subscribe(admin, cb) {
+      const run = () => { const all = items(); cb(admin ? all : all.filter(i => i.visible !== false)); };
+      subs.add(run);
+      const t = setTimeout(run, 350);
+      return () => { clearTimeout(t); subs.delete(run); };
+    },
+    async save(item, added = [], removed = []) {
+      const ph = photos(); added.forEach(p => { ph[p.pid] = p.data; }); removed.forEach(pid => { delete ph[pid]; });
+      const all = items(); const i = all.findIndex(x => x.id === item.id);
+      if (i >= 0) all[i] = item; else all.push(item);
+      put(PK, ph); put(IK, all); emit();
+    },
+    async remove(item) {
+      const ph = photos(); photoPids(item).forEach(pid => { delete ph[pid]; });
+      put(PK, ph); put(IK, items().filter(x => x.id !== item.id)); emit();
+    },
+    async getPhoto(pid) { return photos()[pid] || null; },
+    subscribeProfile(cb) {
+      const run = () => cb(read(MK, () => { put(MK, DEMO_PROFILE); return DEMO_PROFILE; }));
+      profileSubs.add(run); run();
+      return () => profileSubs.delete(run);
+    },
+    async saveProfile(p) { put(MK, p); profileSubs.forEach(f => f()); },
+  };
+}
+
+function makeFirebaseBackend() {
+  if (!window.firebase) return brokenBackend("Couldn't connect to the database. Check your connection and refresh.");
+  firebase.initializeApp(FIREBASE_CONFIG);
+  const auth = firebase.auth(), db = firebase.firestore();
+  const itemsCol = db.collection('items'), photosCol = db.collection('photos'), profileDoc = db.collection('meta').doc('profile');
+  const isAdminEmail = e => !ADMIN_EMAIL || (e || '').toLowerCase() === ADMIN_EMAIL.toLowerCase();
+  return {
+    mode: 'firebase',
+    onAuth(cb) {
+      return auth.onAuthStateChanged(u => {
+        if (u && !isAdminEmail(u.email)) { auth.signOut(); cb(null); return; }
+        cb(u ? { email: u.email } : null);
+      });
+    },
+    async signIn(email, pw) {
+      const cred = await auth.signInWithEmailAndPassword(email.trim(), pw);
+      if (!isAdminEmail(cred.user.email)) { await auth.signOut(); throw Object.assign(new Error('Not the admin'), { code: 'not-admin' }); }
+    },
+    signOut: () => auth.signOut(),
+    subscribe(admin, cb, onErr) {
+      const q = admin ? itemsCol : itemsCol.where('visible', '==', true);
+      return q.onSnapshot(s => cb(s.docs.map(d => ({ ...d.data(), id: d.id }))), onErr);
+    },
+    async save(item, added = [], removed = []) {
+      const b = db.batch();
+      added.forEach(p => b.set(photosCol.doc(p.pid), { data: p.data, item: item.id }));
+      removed.forEach(pid => b.delete(photosCol.doc(pid)));
+      const { id, ...data } = item;
+      b.set(itemsCol.doc(id), data);
+      await b.commit();
+    },
+    async remove(item) {
+      const b = db.batch();
+      photoPids(item).forEach(pid => b.delete(photosCol.doc(pid)));
+      b.delete(itemsCol.doc(item.id));
+      await b.commit();
+    },
+    async getPhoto(pid) { const s = await photosCol.doc(pid).get(); return s.exists ? s.data().data : null; },
+    subscribeProfile(cb, onErr) { return profileDoc.onSnapshot(s => cb(s.exists ? s.data() : null), onErr); },
+    saveProfile: p => profileDoc.set(p),
+  };
+}
+function brokenBackend(msg) {
+  const fail = () => Promise.reject(new Error(msg));
+  return { mode: 'broken', onAuth(cb) { cb(null); return () => {}; }, signIn: fail, signOut: fail, save: fail, remove: fail, getPhoto: fail, saveProfile: fail,
+    subscribeProfile(cb) { cb(null); return () => {}; },
+    subscribe(admin, cb, onErr) { const t = setTimeout(() => onErr(new Error(msg)), 0); return () => clearTimeout(t); } };
+}
+const backend = USE_FIREBASE ? makeFirebaseBackend() : makeLocalBackend();
+
+// Full-size photos are fetched once, then reused.
+const photoData = new Map(), photoReq = new Map();
+function fetchPhoto(pid) {
+  if (photoData.has(pid)) return Promise.resolve(photoData.get(pid));
+  if (!photoReq.has(pid)) {
+    photoReq.set(pid, backend.getPhoto(pid).then(
+      d => { photoReq.delete(pid); if (d) photoData.set(pid, d); return d; },
+      e => { photoReq.delete(pid); throw e; }));
+  }
+  return photoReq.get(pid);
+}
+
+function authMessage(e) {
+  const c = (e && e.code) || '';
+  if (/invalid-credential|wrong-password|user-not-found|invalid-email|invalid-login/.test(c)) return 'Wrong email or password.';
+  if (c === 'not-admin') return 'This account is not the warehouse admin.';
+  if (/too-many-requests/.test(c)) return 'Too many attempts. Please wait a few minutes and try again.';
+  if (/network/.test(c)) return 'Network problem. Check your connection.';
+  return (e && e.message) || 'Could not sign in.';
+}
+function saveMessage(e) {
+  const c = (e && e.code) || '';
+  if (/permission-denied/.test(c)) return 'Not allowed. Sign in again as the admin.';
+  if (e && e.name === 'QuotaExceededError') return 'Browser storage is full (demo mode). Remove some photos.';
+  if (/invalid-argument|resource-exhausted/.test(c)) return 'That item is too large. Remove a photo and try again.';
+  return "Couldn't save: " + ((e && e.message) || 'unknown error');
+}
+
+/* ---------------- small hooks ---------------- */
+function useRoute() {
+  const read = () => decodeURIComponent(location.hash.replace(/^#\/?/, ''));
+  const [route, setRoute] = useState(read);
+  useEffect(() => {
+    const f = () => setRoute(read());
+    window.addEventListener('popstate', f); window.addEventListener('hashchange', f);
+    return () => { window.removeEventListener('popstate', f); window.removeEventListener('hashchange', f); };
+  }, []);
+  const go = useCallback(r => { history.pushState({ mw: 1 }, '', '#' + r); setRoute(r); }, []);
+  const clear = useCallback(() => { history.replaceState(null, '', location.pathname + location.search); setRoute(''); }, []);
+  const back = useCallback(() => { if (history.state && history.state.mw) history.back(); else clear(); }, [clear]);
+  return { route, go, back, clear };
+}
+function useToasts() {
+  const [list, setList] = useState([]);
+  const notify = useCallback((msg, type = 'ok') => {
+    const id = uid();
+    setList(l => [...l, { id, msg, type }]);
+    setTimeout(() => setList(l => l.filter(t => t.id !== id)), type === 'error' ? 4500 : 3000);
+  }, []);
+  return [list, notify];
+}
+
+/* ---------------- ui atoms ---------------- */
+const ICONS = {
+  search: html`<g><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></g>`,
+  x: html`<path d="M18 6 6 18M6 6l12 12"/>`,
+  external: html`<path d="M7 17 17 7M8 7h9v9"/>`,
+  share: html`<g><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"/><path d="m16 6-4-4-4 4"/><path d="M12 2v13"/></g>`,
+  edit: html`<g><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></g>`,
+  trash: html`<g><path d="M3 6h18"/><path d="M8 6V4h8v2"/><path d="m19 6-1 14H6L5 6"/></g>`,
+  plus: html`<path d="M12 5v14M5 12h14"/>`,
+  sort: html`<path d="M4 7h16M7 12h10M10 17h4"/>`,
+  chevL: html`<path d="m15 18-6-6 6-6"/>`,
+  chevR: html`<path d="m9 18 6-6-6-6"/>`,
+  eyeOff: html`<g><path d="m3 3 18 18"/><path d="M10.6 10.6a2 2 0 0 0 2.8 2.8"/><path d="M9.9 4.2A10.4 10.4 0 0 1 12 4c7 0 10 8 10 8a17.6 17.6 0 0 1-3.2 4.3M6.6 6.6C3.9 8.4 2 12 2 12s3 8 10 8a9.7 9.7 0 0 0 5.4-1.6"/></g>`,
+  upload: html`<g><path d="M12 16V4"/><path d="m7 9 5-5 5 5"/><path d="M4 16v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3"/></g>`,
+  link: html`<g><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></g>`,
+  logout: html`<g><path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3"/><path d="m10 17-5-5 5-5"/><path d="M5 12h11"/></g>`,
+  user: html`<g><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></g>`,
+  instagram: html`<g><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none"/></g>`,
+  youtube: html`<g><rect x="2" y="5" width="20" height="14" rx="4"/><path d="m10 9 5 3-5 3Z" fill="currentColor"/></g>`,
+  xbrand: html`<g><path d="M4 4h4.5L20 20h-4.5Z"/><path d="M19.5 4 13.6 10.6M10.4 13.4 4.5 20"/></g>`,
+  facebook: html`<path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V9H7v3.5h2V21h3.5v-8.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15Z"/>`,
+  pinterest: html`<g><circle cx="12" cy="12" r="9"/><path d="m10.6 20.5 2-8.5"/><path d="M9.3 14.6C8.4 13.7 8 12.5 8.3 11.2c.5-2.2 2.6-3.5 4.6-3.2 2.2.3 3.6 2.1 3.2 4.3-.3 2.2-1.8 3.8-3.4 3.5-1-.2-1.5-1-1.2-2"/></g>`,
+  linkedin: html`<g><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10.5V17M8 7.2v.1M12 17v-6.5M12 13.2a2.5 2.5 0 0 1 5 0V17"/></g>`,
+  website: html`<g><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></g>`,
+  email: html`<g><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></g>`,
+};
+function Icon({ name, size = 18 }) {
+  return html`<svg className="ic" width=${size} height=${size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">${ICONS[name]}</svg>`;
+}
+function Stars({ value, size = 14 }) {
+  const pct = Math.max(0, Math.min(5, value)) / 5 * 100;
+  return html`<span className="stars" style=${{ fontSize: size + 'px' }} role="img" aria-label=${value + ' out of 5 stars'}>
+    <span className="s-base">★★★★★</span><span className="s-fill" style=${{ width: pct + '%' }}>★★★★★</span>
+  </span>`;
+}
+function NoImg({ item }) {
+  return html`<div className="noimg"><span>${(item.name || '?').trim().charAt(0).toUpperCase()}</span><small>${item.category}</small></div>`;
+}
+
+const modalStack = [];
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && modalStack.length) { e.preventDefault(); modalStack[modalStack.length - 1].current(); }
+});
+function Modal({ onClose, size = 'item', label, children }) {
+  const closeRef = useRef(onClose); closeRef.current = onClose;
+  const box = useRef();
+  useEffect(() => {
+    modalStack.push(closeRef);
+    document.body.classList.add('lock');
+    const prev = document.activeElement;
+    const t = setTimeout(() => { if (box.current && !box.current.contains(document.activeElement)) box.current.focus({ preventScroll: true }); }, 40);
+    return () => {
+      clearTimeout(t);
+      const i = modalStack.indexOf(closeRef); if (i >= 0) modalStack.splice(i, 1);
+      if (!modalStack.length) document.body.classList.remove('lock');
+      if (prev && prev.focus && document.contains(prev)) prev.focus({ preventScroll: true });
+    };
+  }, []);
+  return html`<div className=${'overlay ov-' + size} onMouseDown=${e => { if (e.target === e.currentTarget) closeRef.current(); }}>
+    <div ref=${box} className=${'modal modal-' + size} role="dialog" aria-modal="true" aria-label=${label} tabIndex="-1">${children}</div>
+  </div>`;
+}
+function Confirm({ title, body, confirmLabel, onCancel, onConfirm }) {
+  return html`<${Modal} onClose=${onCancel} size="sm" label=${title}>
+    <div className="confirm">
+      <div className="confirm-ic"><${Icon} name="trash" size=${22}/></div>
+      <h3>${title}</h3>
+      <p>${body}</p>
+      <div className="confirm-actions">
+        <button className="btn btn-ghost" onClick=${onCancel}>Cancel</button>
+        <button className="btn btn-danger" onClick=${onConfirm} autoFocus>${confirmLabel}</button>
+      </div>
+    </div>
+  <//>`;
+}
+function Toasts({ items }) {
+  return html`<div className="toasts" aria-live="polite">${items.map(t => html`<div key=${t.id} className=${'toast ' + t.type}><span className="t-ic">${t.type === 'error' ? '!' : '✦'}</span>${t.msg}</div>`)}</div>`;
+}
+
+/* ---------------- storefront ---------------- */
+function Avatar({ profile, size = 'sm' }) {
+  const [broken, setBroken] = useState(false);
+  useEffect(() => setBroken(false), [profile.photo]);
+  return html`<span className=${'avatar av-' + size}>
+    ${profile.photo && !broken
+      ? html`<img src=${profile.photo} alt=${profile.name || 'Profile photo'} onError=${() => setBroken(true)}/>`
+      : html`<span className="av-initial">${(firstName(profile) || '✦').charAt(0).toUpperCase()}</span>`}
+  </span>`;
+}
+function SocialIcons({ links, labelled }) {
+  return html`<div className=${labelled ? 'socials' : 'social-icons'}>
+    ${links.map(l => html`<a key=${l.key} className=${labelled ? 'social' : 'social-ic'} href=${l.href}
+        target=${l.key === 'email' ? null : '_blank'} rel="noopener noreferrer me" aria-label=${l.label} title=${l.label}>
+      <${Icon} name=${l.icon || l.key} size=${labelled ? 17 : 16}/>${labelled && html`<span>${l.label}</span>`}
+    </a>`)}
+  </div>`;
+}
+const scrollToAbout = () => { const el = document.getElementById('about'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' }); };
+function HeroProfile({ profile }) {
+  if (!hasProfile(profile)) return null;
+  const links = socialLinks(profile);
+  return html`<div className="hero-profile">
+    <button className="hp-me" onClick=${scrollToAbout} title="About me">
+      <${Avatar} profile=${profile}/>
+      <span>Curated by <b>${firstName(profile) || 'me'}</b></span>
+    </button>
+    ${links.length > 0 && html`<span className="hp-sep" aria-hidden="true"></span>`}
+    ${links.length > 0 && html`<${SocialIcons} links=${links}/>`}
+  </div>`;
+}
+function About({ profile, admin, onEdit }) {
+  const has = hasProfile(profile);
+  if (!has && !admin) return null;
+  if (!has) return html`<section className="about" id="about"><div className="wrap">
+    <div className="about-card about-empty">
+      <div className="empty-mark"><${Icon} name="user" size=${30}/></div>
+      <h2>Add your About me</h2>
+      <p className="muted">Introduce yourself with a photo, a short bio and your social links. It shows here and at the top of the page.</p>
+      <button className="btn btn-accent" onClick=${onEdit}><${Icon} name="edit" size=${16}/> Set up About me</button>
+    </div>
+  </div></section>`;
+  const links = socialLinks(profile);
+  return html`<section className="about" id="about"><div className="wrap">
+    <div className="about-card">
+      <div className="about-photo"><${Avatar} profile=${profile} size="lg"/></div>
+      <div className="about-text">
+        <div className="eyebrow sm">About me</div>
+        <h2>${profile.name ? `Hi, I’m ${firstName(profile)}` : 'About me'}</h2>
+        ${profile.bio && html`<p className="about-bio">${profile.bio}</p>`}
+        ${links.length > 0 && html`<${SocialIcons} links=${links} labelled/>`}
+        ${admin && html`<button className="btn btn-ghost btn-sm about-edit" onClick=${onEdit}><${Icon} name="edit" size=${14}/> Edit About me</button>`}
+      </div>
+    </div>
+  </div></section>`;
+}
+
+function Hero({ count, cats, avg, avgOff, profile }) {
+  return html`<header className="hero">
+    <div className="hero-bg" aria-hidden="true"><span className="orb o1"></span><span className="orb o2"></span><span className="orb o3"></span><span className="grain"></span></div>
+    <div className="wrap hero-inner">
+      <${HeroProfile} profile=${profile}/>
+      <div className="eyebrow"><span className="spark">✦</span>Personally picked · Honestly reviewed<span className="spark">✦</span></div>
+      <h1>Welcome to my <em>warehouse</em></h1>
+      <p className="lede">Things I’ve bought, used and genuinely like — clothes, shoes, wallets and more. Tap anything to see my take and where to get it.</p>
+      ${count > 0 && html`<div className="stats">
+        <div><b>${count}</b><span>items</span></div>
+        <div><b>${cats}</b><span>${cats === 1 ? 'category' : 'categories'}</span></div>
+        ${avg > 0 && html`<div><b>${avg.toFixed(1)}<small>★</small></b><span>avg rating</span></div>`}
+        ${avgOff > 0 && html`<div><b>${avgOff}%</b><span>avg saving</span></div>`}
+      </div>`}
+    </div>
+  </header>`;
+}
+
+function Toolbar({ q, setQ, cat, setCat, sort, setSort, categories, total }) {
+  const sentinel = useRef(), input = useRef();
+  const [stuck, setStuck] = useState(false);
+  useEffect(() => {
+    const f = () => sentinel.current && setStuck(sentinel.current.getBoundingClientRect().top < 0);
+    const k = e => {
+      if (e.key === '/' && !modalStack.length && !/^(INPUT|TEXTAREA|SELECT)$/.test(document.activeElement.tagName)) { e.preventDefault(); input.current.focus(); }
+    };
+    f();
+    window.addEventListener('scroll', f, { passive: true }); window.addEventListener('keydown', k);
+    return () => { window.removeEventListener('scroll', f); window.removeEventListener('keydown', k); };
+  }, []);
+  const pick = c => {
+    setCat(c);
+    const s = sentinel.current;
+    if (s && s.getBoundingClientRect().top < 0) window.scrollTo({ top: s.offsetTop, behavior: 'smooth' });
+  };
+  return html`<${React.Fragment}>
+    <div ref=${sentinel} aria-hidden="true"></div>
+    <div className=${'toolbar' + (stuck ? ' stuck' : '')}>
+      <div className="wrap">
+        <div className="tb-row">
+          <div className="search">
+            <${Icon} name="search"/>
+            <input ref=${input} type="search" value=${q} onChange=${e => setQ(e.target.value)} placeholder="Search items, brands, tags…" aria-label="Search items" enterKeyHint="search"/>
+            ${q ? html`<button className="clear" onClick=${() => { setQ(''); input.current.focus(); }} aria-label="Clear search"><${Icon} name="x" size=${16}/></button>`
+                : html`<kbd className="kbd" title="Press / to search">/</kbd>`}
+          </div>
+          <div className=${'sort-wrap' + (sort !== 'recommended' ? ' active' : '')} title="Sort">
+            <${Icon} name="sort"/>
+            <select className="sort" value=${sort} onChange=${e => setSort(e.target.value)} aria-label="Sort items">
+              ${Object.entries(SORTS).map(([k, s]) => html`<option key=${k} value=${k}>${s.label}</option>`)}
+            </select>
+          </div>
+        </div>
+        <div className="chips" role="toolbar" aria-label="Categories">
+          <button className=${'chip' + (cat === 'All' ? ' on' : '')} onClick=${() => pick('All')} aria-pressed=${cat === 'All'}>All <span className="n">${total}</span></button>
+          ${categories.map(([c, n]) => html`<button key=${c} className=${'chip' + (cat === c ? ' on' : '')} onClick=${() => pick(c)} aria-pressed=${cat === c}>${c} <span className="n">${n}</span></button>`)}
+        </div>
+      </div>
+    </div>
+  <//>`;
+}
+
+function Card({ item, index = 0, admin, onOpen, onEdit, onDelete, preview }) {
+  const main = item.images[0] ? thumbSrc(item, item.images[0]) : '';
+  const alt = item.images[1] ? thumbSrc(item, item.images[1]) : '';
+  const [broken, setBroken] = useState(false);
+  useEffect(() => setBroken(false), [main]);
+  const off = pctOff(item);
+  const open = () => { if (!preview) onOpen(item); };
+  return html`<article className=${'card' + (item.visible ? '' : ' is-hidden') + (preview ? ' is-preview' : '')}
+      style=${preview ? null : { animationDelay: Math.min(index, 12) * 45 + 'ms' }}
+      onClick=${open} onKeyDown=${e => { if (e.key === 'Enter' && e.target === e.currentTarget) open(); }}
+      tabIndex=${preview ? -1 : 0} aria-label=${preview ? null : item.name}>
+    <div className=${'thumb fit-' + item.fit}>
+      ${main && !broken ? html`<img className="pic" src=${main} alt=${item.name} loading="lazy" decoding="async" onError=${() => setBroken(true)}/>` : html`<${NoImg} item=${item}/>`}
+      ${alt && !broken && html`<img className="pic-alt" src=${alt} alt="" loading="lazy" decoding="async"/>`}
+      ${off > 0 && html`<span className="badge badge-off">−${off}%</span>`}
+      <div className="badges-r">
+        ${item.featured && html`<span className="badge badge-pick">✦ Top pick</span>`}
+        ${!item.visible && html`<span className="badge badge-hidden"><${Icon} name="eyeOff" size=${12}/> Hidden</span>`}
+      </div>
+      ${admin && !preview && html`<div className="admin-tools" onClick=${e => e.stopPropagation()}>
+        <button className="tool" onClick=${() => onEdit(item)}><${Icon} name="edit" size=${14}/> Edit</button>
+        <button className="tool danger" onClick=${() => onDelete(item)} aria-label=${'Delete ' + item.name}><${Icon} name="trash" size=${14}/></button>
+      </div>`}
+    </div>
+    <div className="card-body">
+      <div className="card-meta"><span>${item.brand || item.category}</span>${item.rating > 0 && html`<span className="mini-rating">★ ${item.rating.toFixed(1)}</span>`}</div>
+      <h3>${item.name}</h3>
+      ${item.price != null && html`<div className="price-row"><span className="price">${money(item.price)}</span>${off > 0 && html`<s className="mrp">${money(item.mrp)}</s>`}</div>`}
+      <div className="card-foot">
+        <span className="store">${item.store ? 'on ' + item.store : item.category}</span>
+        ${item.link
+          ? html`<a className="buy-mini" href=${item.link} target="_blank" rel="noopener noreferrer" onClick=${e => e.stopPropagation()}>Buy <${Icon} name="external" size=${14}/></a>`
+          : html`<span className="buy-mini muted">Details</span>`}
+      </div>
+    </div>
+  </article>`;
+}
+
+function Skeleton() {
+  return html`<div className="card skeleton" aria-hidden="true"><div className="thumb"></div><div className="card-body"><i></i><i></i><i></i></div></div>`;
+}
+
+function useFullSrc(item, entry) {
+  const photo = isPhotoRef(entry), pid = photo ? pidOf(entry) : null;
+  const [full, setFull] = useState(() => photo ? (photoData.get(pid) || null) : entry);
+  useEffect(() => {
+    if (!photo) { setFull(entry); return; }
+    if (photoData.has(pid)) { setFull(photoData.get(pid)); return; }
+    setFull(null);
+    let live = true;
+    fetchPhoto(pid).then(d => { if (live && d) setFull(d); }).catch(() => {});
+    return () => { live = false; };
+  }, [entry]);
+  return { src: full || thumbSrc(item, entry), sharp: !!full };
+}
+function Slide({ item, entry, i }) {
+  const { src, sharp } = useFullSrc(item, entry);
+  return html`<div className=${'g-slide fit-' + item.fit}>
+    ${src ? html`<img src=${src} className=${sharp ? '' : 'blurry'} alt=${item.name + ' — photo ' + (i + 1)} draggable="false"/>` : html`<${NoImg} item=${item}/>`}
+  </div>`;
+}
+function Gallery({ item }) {
+  const imgs = item.images;
+  const strip = useRef();
+  const [idx, setIdx] = useState(0);
+  const go = useCallback(i => {
+    const el = strip.current; if (!el || !imgs.length) return;
+    const t = (i + imgs.length) % imgs.length;
+    el.scrollTo({ left: t * el.clientWidth, behavior: 'smooth' });
+  }, [imgs.length]);
+  useEffect(() => {
+    const k = e => {
+      if (modalStack.length !== 1) return;
+      if (e.key === 'ArrowRight') go(idx + 1);
+      if (e.key === 'ArrowLeft') go(idx - 1);
+    };
+    window.addEventListener('keydown', k);
+    return () => window.removeEventListener('keydown', k);
+  }, [idx, go]);
+  const onScroll = e => { const el = e.currentTarget; const i = Math.round(el.scrollLeft / el.clientWidth); if (i !== idx) setIdx(i); };
+  if (!imgs.length) return html`<div className="gallery"><div className="g-strip"><div className="g-slide"><${NoImg} item=${item}/></div></div></div>`;
+  const many = imgs.length > 1;
+  return html`<div className="gallery">
+    <div className="g-frame">
+      <div className="g-strip" ref=${strip} onScroll=${onScroll}>
+        ${imgs.map((e, i) => html`<${Slide} key=${e + i} item=${item} entry=${e} i=${i}/>`)}
+      </div>
+      ${many && html`<button className="g-nav prev" onClick=${() => go(idx - 1)} aria-label="Previous photo"><${Icon} name="chevL"/></button>`}
+      ${many && html`<button className="g-nav next" onClick=${() => go(idx + 1)} aria-label="Next photo"><${Icon} name="chevR"/></button>`}
+      ${many && html`<div className="g-dots">${imgs.map((_, i) => html`<i key=${i} className=${i === idx ? 'on' : ''}></i>`)}</div>`}
+      ${many && html`<div className="g-count">${idx + 1} / ${imgs.length}</div>`}
+    </div>
+    ${many && html`<div className="g-thumbs">${imgs.map((e, i) => html`<button key=${i} className=${i === idx ? 'on' : ''} onClick=${() => go(i)} aria-label=${'Show photo ' + (i + 1)}>
+      <img src=${thumbSrc(item, e)} alt="" className=${item.fit === 'contain' ? 'contain' : ''}/></button>`)}</div>`}
+  </div>`;
+}
+
+function ItemModal({ item, admin, onClose, onEdit, onTag, notify }) {
+  const off = pctOff(item);
+  useEffect(() => {
+    const t = document.title; document.title = item.name + ' · ' + SITE_NAME;
+    return () => { document.title = t; };
+  }, [item.name]);
+  const share = async () => {
+    const url = location.origin + location.pathname + '#item/' + encodeURIComponent(item.id);
+    const text = item.name + (item.price != null ? ' — ' + money(item.price) : '') + ' · from my warehouse';
+    if (navigator.share) { try { await navigator.share({ title: item.name, text, url }); } catch (e) {} return; }
+    try { await navigator.clipboard.writeText(url); notify('Link copied — paste it anywhere to share'); }
+    catch (e) { window.prompt('Copy this link', url); }
+  };
+  const specs = [['Brand', item.brand], ['Category', item.category], ['Size', item.size], ['Colour', item.colour], ['Material', item.material], ['Bought on', item.store]].filter(s => s[1]);
+  return html`<${Modal} onClose=${onClose} size="item" label=${item.name}>
+    <button className="close" onClick=${onClose} aria-label="Close"><${Icon} name="x"/></button>
+    <div className="pd">
+      <div className="pd-media"><${Gallery} key=${item.id} item=${item}/></div>
+      <div className="pd-info">
+        <div className="pd-eyebrow">${[item.category, item.brand].filter(Boolean).join('  ·  ')}</div>
+        <h2 className="pd-title">${item.name}</h2>
+        ${item.rating > 0 && html`<div className="pd-rating"><${Stars} value=${item.rating} size=${18}/><span>${item.rating.toFixed(1)} · my rating</span></div>`}
+        ${item.price != null && html`<div className="pd-price">
+          <span className="price big">${money(item.price)}</span>
+          ${off > 0 && html`<s className="mrp">${money(item.mrp)}</s>`}
+          ${off > 0 && html`<span className="save">You save ${money(item.mrp - item.price)} · ${off}% off</span>`}
+        </div>`}
+        <div className="pd-actions">
+          ${item.link
+            ? html`<a className="btn btn-accent btn-lg" href=${item.link} target="_blank" rel="noopener noreferrer">Buy on ${item.store || 'the store'} <${Icon} name="external"/></a>`
+            : html`<span className="no-link">Buy link coming soon</span>`}
+          <button className="btn btn-ghost btn-lg btn-icon" onClick=${share} aria-label="Share this item" title="Share"><${Icon} name="share"/></button>
+          ${admin && html`<button className="btn btn-ghost btn-lg btn-icon" onClick=${() => onEdit(item)} aria-label="Edit item" title="Edit"><${Icon} name="edit"/></button>`}
+        </div>
+        ${item.review && html`<blockquote className="pd-review"><div className="q-label">Why I like it</div><p>${item.review}</p></blockquote>`}
+        ${specs.length > 0 && html`<dl className="pd-specs">${specs.map(([k, v]) => html`<div key=${k}><dt>${k}</dt><dd>${v}</dd></div>`)}</dl>`}
+        ${item.tags.length > 0 && html`<div className="pd-tags">${item.tags.map(t => html`<button key=${t} className="tag" onClick=${() => onTag(t)} title=${'See more ' + t}>#${t}</button>`)}</div>`}
+        ${item.price != null && item.link && html`<p className="fine">The price shown is what I paid. The current price on ${item.store || 'the store'} may be different.</p>`}
+      </div>
+    </div>
+  <//>`;
+}
+
+/* ---------------- admin ---------------- */
+function LoginModal({ onClose, onDone }) {
+  const [email, setEmail] = useState(''), [pw, setPw] = useState('');
+  const [err, setErr] = useState(''), [busy, setBusy] = useState(false);
+  const submit = async e => {
+    e.preventDefault(); setErr(''); setBusy(true);
+    try { await backend.signIn(email, pw); onDone(); }
+    catch (ex) { setErr(authMessage(ex)); setBusy(false); }
+  };
+  return html`<${Modal} onClose=${onClose} size="sm" label="Admin sign in">
+    <button className="close" onClick=${onClose} aria-label="Close"><${Icon} name="x"/></button>
+    <form className="login" onSubmit=${submit}>
+      <div className="login-mark">✦</div>
+      <h2>Admin sign in</h2>
+      <p className="muted">Only the warehouse owner can add or edit items.</p>
+      <label className="field"><span className="f-label">Email</span>
+        <input type="email" autoComplete="username" required value=${email} onChange=${e => setEmail(e.target.value)} autoFocus/></label>
+      <label className="field"><span className="f-label">Password</span>
+        <input type="password" autoComplete="current-password" required value=${pw} onChange=${e => setPw(e.target.value)}/></label>
+      ${err && html`<div className="form-err" role="alert">${err}</div>`}
+      <button className="btn btn-accent btn-lg btn-block" disabled=${busy}>${busy ? 'Signing in…' : 'Sign in'}</button>
+      ${backend.mode === 'local' && html`<p className="hint">Demo mode: use any email with the password <b>admin</b>.</p>`}
+    </form>
+  <//>`;
+}
+
+function Field({ label, hint, error, children }) {
+  return html`<label className=${'field' + (error ? ' has-err' : '')}>
+    <span className="f-label">${label}</span>
+    ${children}
+    ${error ? html`<span className="f-err">${error}</span>` : hint ? html`<span className="f-hint">${hint}</span>` : null}
+  </label>`;
+}
+function Toggle({ checked, onChange, label, hint }) {
+  return html`<label className="toggle">
+    <input type="checkbox" checked=${checked} onChange=${e => onChange(e.target.checked)}/>
+    <span className="track"><span className="knob"></span></span>
+    <span className="t-text"><b>${label}</b>${hint && html`<small>${hint}</small>`}</span>
+  </label>`;
+}
+const RATING_WORDS = ['Tap a star to rate', 'Not great', "It's okay", 'Good', 'Great', 'Love it'];
+function StarInput({ value, onChange }) {
+  const [hover, setHover] = useState(0);
+  const shown = hover || value;
+  return html`<div className="star-input" onMouseLeave=${() => setHover(0)}>
+    ${[1, 2, 3, 4, 5].map(n => html`<button type="button" key=${n} className=${n <= shown ? 'on' : ''}
+      onMouseEnter=${() => setHover(n)} onClick=${() => onChange(n === value ? 0 : n)} aria-label=${n + (n > 1 ? ' stars' : ' star')} aria-pressed=${n <= value}>★</button>`)}
+    <span className="star-label">${RATING_WORDS[shown]}</span>
+  </div>`;
+}
+
+function PhotoManager({ images, setImages, fit, setFit, notify, error }) {
+  const fileRef = useRef();
+  const [url, setUrl] = useState('');
+  const [busy, setBusy] = useState(0);
+  const [drag, setDrag] = useState(false);
+  const countRef = useRef(images.length); countRef.current = images.length + busy;
+  const addFiles = async files => {
+    let list = Array.from(files || []).filter(f => /^image\//.test(f.type));
+    if (!list.length) return;
+    const room = MAX_PHOTOS - countRef.current;
+    if (room <= 0) { notify(`Up to ${MAX_PHOTOS} photos per item`, 'error'); return; }
+    if (list.length > room) { notify(`Only the first ${room} photo${room > 1 ? 's were' : ' was'} added (max ${MAX_PHOTOS})`, 'error'); list = list.slice(0, room); }
+    setBusy(n => n + list.length);
+    for (const file of list) {
+      try { const p = await processUpload(file); setImages(a => [...a, p]); }
+      catch (e) { notify(e.message, 'error'); }
+      setBusy(n => n - 1);
+    }
+  };
+  const addRef = useRef(addFiles); addRef.current = addFiles;
+  useEffect(() => {
+    const onPaste = e => {
+      const files = Array.from((e.clipboardData && e.clipboardData.files) || []).filter(f => /^image\//.test(f.type));
+      if (files.length) { e.preventDefault(); addRef.current(files); }
+    };
+    document.addEventListener('paste', onPaste);
+    return () => document.removeEventListener('paste', onPaste);
+  }, []);
+  const addUrl = () => {
+    if (!url.trim()) return;
+    const u = normalizeUrl(url);
+    if (!isValidUrl(u)) { notify('Paste a full image link that starts with https://', 'error'); return; }
+    if (countRef.current >= MAX_PHOTOS) { notify(`Up to ${MAX_PHOTOS} photos per item`, 'error'); return; }
+    setImages(a => [...a, { url: u }]); setUrl('');
+  };
+  const move = (i, d) => setImages(a => { const b = [...a], j = i + d; if (j < 0 || j >= b.length) return a; [b[i], b[j]] = [b[j], b[i]]; return b; });
+  const remove = i => setImages(a => a.filter((_, k) => k !== i));
+  const cover = i => setImages(a => [a[i], ...a.filter((_, k) => k !== i)]);
+  return html`<div className=${'photos' + (drag ? ' drag' : '')}
+      onDragOver=${e => { e.preventDefault(); setDrag(true); }} onDragLeave=${() => setDrag(false)}
+      onDrop=${e => { e.preventDefault(); setDrag(false); addFiles(e.dataTransfer.files); }}>
+    <div className="ph-grid">
+      ${images.map((p, i) => html`<div className=${'ph-item fit-' + fit} key=${p.pid || p.url}>
+        <img src=${p.thumb || p.url} alt=${'Photo ' + (i + 1)} onError=${e => e.currentTarget.parentNode.classList.add('broken')}/>
+        ${i === 0 && html`<span className="cover-tag">Cover</span>`}
+        <div className="ph-tools">
+          ${i > 0 && html`<button type="button" onClick=${() => cover(i)} title="Make cover photo" aria-label="Make cover photo">★</button>`}
+          ${i > 0 && html`<button type="button" onClick=${() => move(i, -1)} title="Move left" aria-label="Move left"><${Icon} name="chevL" size=${14}/></button>`}
+          ${i < images.length - 1 && html`<button type="button" onClick=${() => move(i, 1)} title="Move right" aria-label="Move right"><${Icon} name="chevR" size=${14}/></button>`}
+          <button type="button" className="danger" onClick=${() => remove(i)} title="Remove photo" aria-label="Remove photo"><${Icon} name="x" size=${14}/></button>
+        </div>
+      </div>`)}
+      ${Array.from({ length: busy }).map((_, i) => html`<div className="ph-item loading" key=${'busy' + i}><span className="spinner"></span></div>`)}
+      ${images.length + busy < MAX_PHOTOS && html`<button type="button" className="ph-add" onClick=${() => fileRef.current.click()}>
+        <${Icon} name="upload" size=${22}/><span>Upload</span><small>or drop / paste</small>
+      </button>`}
+    </div>
+    <input ref=${fileRef} type="file" accept="image/*" multiple hidden onChange=${e => { addFiles(e.target.files); e.target.value = ''; }}/>
+    <div className="url-row">
+      <${Icon} name="link" size=${16}/>
+      <input placeholder="…or paste an image link (https://…)" value=${url} onChange=${e => setUrl(e.target.value)}
+        onKeyDown=${e => { if (e.key === 'Enter') { e.preventDefault(); addUrl(); } }} aria-label="Image link"/>
+      <button type="button" className="btn btn-ghost btn-sm" onClick=${addUrl}>Add</button>
+    </div>
+    <div className="fit-row">
+      <span>Photo style</span>
+      <div className="seg" role="group" aria-label="Photo style">
+        <button type="button" className=${fit === 'cover' ? 'on' : ''} onClick=${() => setFit('cover')} aria-pressed=${fit === 'cover'}>Fill the frame</button>
+        <button type="button" className=${fit === 'contain' ? 'on' : ''} onClick=${() => setFit('contain')} aria-pressed=${fit === 'contain'}>Show whole item</button>
+      </div>
+    </div>
+    ${error && html`<span className="f-err">${error}</span>`}
+  </div>`;
+}
+
+const EMPTY_FORM = { name: '', brand: '', category: '', price: '', mrp: '', link: '', store: '', images: [], fit: 'cover', rating: 0, review: '', size: '', colour: '', material: '', tags: '', featured: false, visible: true };
+function itemToForm(it) {
+  return {
+    name: it.name, brand: it.brand, category: it.category, price: it.price ?? '', mrp: it.mrp ?? '',
+    link: it.link, store: it.store && it.store !== storeFromUrl(it.link) ? it.store : '',
+    images: it.images.map(e => isPhotoRef(e) ? { pid: pidOf(e), thumb: it.thumbs[pidOf(e)] || '' } : { url: e }),
+    fit: it.fit, rating: it.rating, review: it.review, size: it.size, colour: it.colour, material: it.material,
+    tags: it.tags.join(', '), featured: it.featured, visible: it.visible,
+  };
+}
+function formToItem(f, base, newId) {
+  const link = normalizeUrl(f.link);
+  const thumbs = {};
+  f.images.forEach(e => { if (e.pid) thumbs[e.pid] = e.thumb || ''; });
+  const now = Date.now();
+  return {
+    id: base ? base.id : newId,
+    name: f.name.trim(), brand: f.brand.trim(), category: f.category.trim() || 'Other',
+    price: toNum(f.price), mrp: toNum(f.mrp),
+    link, store: f.store.trim() || (link ? storeFromUrl(link) : ''),
+    images: f.images.map(e => e.url || 'photo:' + e.pid), thumbs, fit: f.fit,
+    rating: f.rating || 0, review: f.review.trim(),
+    size: f.size.trim(), colour: f.colour.trim(), material: f.material.trim(),
+    tags: Array.from(new Set(f.tags.split(',').map(s => s.trim().replace(/^#/, '')).filter(Boolean))),
+    featured: !!f.featured, visible: !!f.visible,
+    createdAt: base ? (base.createdAt || now) : now, updatedAt: now,
+  };
+}
+
+function ItemForm({ initial, categories, onClose, onSave, onDelete, notify }) {
+  const start = useMemo(() => initial ? itemToForm(initial) : { ...EMPTY_FORM }, []);
+  const newId = useRef(uid());
+  const [f, setF] = useState(start);
+  const [errors, setErrors] = useState({});
+  const [busy, setBusy] = useState(false);
+  const bodyRef = useRef();
+  const set = k => e => { const v = e.target.value; setF(s => ({ ...s, [k]: v })); };
+  const setVal = (k, v) => setF(s => ({ ...s, [k]: v }));
+  const setImages = v => setF(s => ({ ...s, images: typeof v === 'function' ? v(s.images) : v }));
+  const preview = useMemo(() => normItem(formToItem(f, initial, newId.current)), [f]);
+  const detected = f.link.trim() ? storeFromUrl(f.link) : '';
+  const off = pctOff({ price: toNum(f.price), mrp: toNum(f.mrp) });
+  const catOptions = useMemo(() => Array.from(new Set([...categories, ...DEFAULT_CATEGORIES])), [categories]);
+  const tryClose = () => {
+    if (busy) return;
+    if (JSON.stringify(f) === JSON.stringify(start) || window.confirm('Discard your changes?')) onClose();
+  };
+  const submit = async e => {
+    e.preventDefault();
+    const errs = {};
+    if (!f.name.trim()) errs.name = 'Give the item a name';
+    if (f.price !== '' && (toNum(f.price) == null || +f.price < 0)) errs.price = 'Enter a valid amount';
+    if (f.mrp !== '' && (toNum(f.mrp) == null || +f.mrp < 0)) errs.mrp = 'Enter a valid amount';
+    if (f.link.trim() && !isValidUrl(normalizeUrl(f.link))) errs.link = "That doesn't look like a web link";
+    setErrors(errs);
+    if (Object.keys(errs).length) {
+      notify('Please fix the highlighted fields', 'error');
+      setTimeout(() => { const el = bodyRef.current && bodyRef.current.querySelector('.has-err'); if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' }); }, 30);
+      return;
+    }
+    setBusy(true);
+    const item = formToItem(f, initial, newId.current);
+    const added = f.images.filter(p => p.full).map(p => ({ pid: p.pid, data: p.full }));
+    const keep = new Set(f.images.filter(p => p.pid).map(p => p.pid));
+    const removed = initial ? photoPids(initial).filter(p => !keep.has(p)) : [];
+    const ok = await onSave(item, added, removed, !initial);
+    if (!ok) setBusy(false);
+  };
+  return html`<${Modal} onClose=${tryClose} size="form" label=${initial ? 'Edit item' : 'Add item'}>
+    <form className="mf-form" onSubmit=${submit} noValidate>
+      <div className="mf-head">
+        <div><div className="eyebrow sm">✦ Admin</div><h2>${initial ? 'Edit item' : 'Add a new item'}</h2></div>
+        <button type="button" className="close static" onClick=${tryClose} aria-label="Close"><${Icon} name="x"/></button>
+      </div>
+      <div className="mf-body" ref=${bodyRef}>
+        <div className="mf-main">
+          <section className="fs">
+            <h4>Photos</h4>
+            <${PhotoManager} images=${f.images} setImages=${setImages} fit=${f.fit} setFit=${v => setVal('fit', v)} notify=${notify}/>
+          </section>
+          <section className="fs">
+            <h4>The basics</h4>
+            <${Field} label="Item name *" error=${errors.name}>
+              <input value=${f.name} onChange=${set('name')} placeholder="e.g. Slim leather bifold wallet" maxLength="120" autoFocus=${!initial}/>
+            <//>
+            <div className="row2">
+              <${Field} label="Brand"><input value=${f.brand} onChange=${set('brand')} placeholder="e.g. Tommy Hilfiger" maxLength="60"/><//>
+              <${Field} label="Category"><input list="mw-cats" value=${f.category} onChange=${set('category')} placeholder="Pick below or type" maxLength="40"/><//>
+            </div>
+            <div className="cat-quick">
+              ${catOptions.slice(0, 10).map(c => html`<button type="button" key=${c} className=${'chip sm' + (f.category === c ? ' on' : '')} onClick=${() => setVal('category', c)}>${c}</button>`)}
+            </div>
+            <datalist id="mw-cats">${catOptions.map(c => html`<option key=${c} value=${c}/>`)}</datalist>
+          </section>
+          <section className="fs">
+            <h4>Price</h4>
+            <div className="row2">
+              <${Field} label="Price I paid" error=${errors.price}>
+                <div className="adorn"><span>₹</span><input type="number" inputMode="decimal" min="0" step="any" value=${f.price} onChange=${set('price')} placeholder="1499"/></div>
+              <//>
+              <${Field} label="Original price (MRP)" error=${errors.mrp} hint=${off > 0 ? `Shows a −${off}% deal badge` : 'Optional · adds a deal badge'}>
+                <div className="adorn"><span>₹</span><input type="number" inputMode="decimal" min="0" step="any" value=${f.mrp} onChange=${set('mrp')} placeholder="2499"/></div>
+              <//>
+            </div>
+          </section>
+          <section className="fs">
+            <h4>Where to buy</h4>
+            <${Field} label="Buy link" error=${errors.link} hint=${detected ? 'Store detected: ' + detected : 'Paste the product page from Amazon, Myntra, or any shop'}>
+              <div className="adorn"><${Icon} name="link" size=${16}/><input type="url" inputMode="url" value=${f.link} onChange=${set('link')} placeholder="https://www.amazon.in/…"/></div>
+            <//>
+            <${Field} label="Store name" hint="Leave blank to use the detected store">
+              <input value=${f.store} onChange=${set('store')} placeholder=${detected || 'e.g. Amazon'} maxLength="40"/>
+            <//>
+          </section>
+          <section className="fs">
+            <h4>Your take</h4>
+            <div className="field"><span className="f-label">My rating</span><${StarInput} value=${f.rating} onChange=${v => setVal('rating', v)}/></div>
+            <${Field} label="Why I like it" hint=${f.review.length + ' / 600'}>
+              <textarea rows="3" maxLength="600" value=${f.review} onChange=${set('review')} placeholder="Comfort, quality, how long you've used it, who it's good for…"></textarea>
+            <//>
+          </section>
+          <section className="fs">
+            <h4>Details</h4>
+            <div className="row3">
+              <${Field} label="Size"><input value=${f.size} onChange=${set('size')} placeholder="e.g. M, UK 9" maxLength="40"/><//>
+              <${Field} label="Colour"><input value=${f.colour} onChange=${set('colour')} placeholder="e.g. Tan" maxLength="40"/><//>
+              <${Field} label="Material"><input value=${f.material} onChange=${set('material')} placeholder="e.g. Leather" maxLength="60"/><//>
+            </div>
+            <${Field} label="Tags" hint="Separate with commas. Visitors can search by them.">
+              <input value=${f.tags} onChange=${set('tags')} placeholder="gift idea, summer, office" maxLength="200"/>
+            <//>
+          </section>
+          <section className="fs">
+            <h4>Visibility</h4>
+            <${Toggle} checked=${f.featured} onChange=${v => setVal('featured', v)} label="Top pick" hint="Gets a silver badge and shows first"/>
+            <${Toggle} checked=${f.visible} onChange=${v => setVal('visible', v)} label="Visible to visitors" hint="Turn off to keep it as a private draft"/>
+          </section>
+          ${initial && html`<section className="fs">
+            <button type="button" className="btn btn-danger-ghost" style=${{ alignSelf: 'flex-start' }} onClick=${() => onDelete(initial)}><${Icon} name="trash" size=${16}/> Delete this item</button>
+          </section>`}
+        </div>
+        <aside className="mf-preview">
+          <div className="sticky">
+            <div className="eyebrow sm">Live preview</div>
+            <${Card} item=${preview} preview/>
+            <p className="hint">This is how the card will look to visitors.</p>
+          </div>
+        </aside>
+      </div>
+      <div className="mf-foot">
+        <span className="grow">${f.images.length ? `${f.images.length} photo${f.images.length > 1 ? 's' : ''}` : 'Tip: items with photos get far more clicks'}</span>
+        <button type="button" className="btn btn-ghost" onClick=${tryClose} disabled=${busy}>Cancel</button>
+        <button type="submit" className="btn btn-accent" disabled=${busy}>${busy ? 'Saving…' : initial ? 'Save changes' : 'Add to warehouse'}</button>
+      </div>
+    </form>
+  <//>`;
+}
+
+function ProfileForm({ initial, onClose, onSave, notify }) {
+  const start = useMemo(() => normProfile(initial), []);
+  const [p, setP] = useState(start);
+  const [photoUrl, setPhotoUrl] = useState('');
+  const [busy, setBusy] = useState(false);
+  const [err, setErr] = useState('');
+  const fileRef = useRef();
+  const set = k => e => { const v = e.target.value; setP(s => ({ ...s, [k]: v })); };
+  const setLink = k => e => { const v = e.target.value; setP(s => ({ ...s, links: { ...s.links, [k]: v } })); };
+  const tryClose = () => { if (busy) return; if (JSON.stringify(p) === JSON.stringify(start) || window.confirm('Discard your changes?')) onClose(); };
+  const upload = async file => {
+    if (!file) return;
+    try { const d = await processAvatar(file); setP(s => ({ ...s, photo: d })); }
+    catch (e) { notify(e.message, 'error'); }
+  };
+  const usePhotoUrl = () => {
+    const u = normalizeUrl(photoUrl);
+    if (!isValidUrl(u)) { notify('Paste a full image link that starts with https://', 'error'); return; }
+    setP(s => ({ ...s, photo: u })); setPhotoUrl('');
+  };
+  const submit = async e => {
+    e.preventDefault();
+    const email = p.links.email.trim();
+    if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.replace(/^mailto:/i, ''))) { setErr('That email address doesn’t look right.'); return; }
+    setErr(''); setBusy(true);
+    const clean = { name: p.name.trim(), bio: p.bio.trim(), photo: p.photo, links: {} };
+    SOCIALS.forEach(s => { clean.links[s.key] = p.links[s.key].trim(); });
+    const ok = await onSave(clean);
+    if (!ok) setBusy(false);
+  };
+  return html`<${Modal} onClose=${tryClose} size="profile" label="Edit About me">
+    <form className="mf-form" onSubmit=${submit} noValidate>
+      <div className="mf-head">
+        <div><div className="eyebrow sm">✦ Admin</div><h2>About me</h2></div>
+        <button type="button" className="close static" onClick=${tryClose} aria-label="Close"><${Icon} name="x"/></button>
+      </div>
+      <div className="mf-body single">
+        <div className="mf-main">
+          <section className="fs">
+            <h4>Photo</h4>
+            <div className="pf-photo">
+              <${Avatar} profile=${p} size="md"/>
+              <div className="pf-photo-actions">
+                <div className="pf-btns">
+                  <button type="button" className="btn btn-ghost btn-sm" onClick=${() => fileRef.current.click()}><${Icon} name="upload" size=${15}/> Upload photo</button>
+                  ${p.photo && html`<button type="button" className="btn btn-danger-ghost btn-sm" onClick=${() => setP(s => ({ ...s, photo: '' }))}>Remove</button>`}
+                </div>
+                <div className="url-row">
+                  <${Icon} name="link" size=${16}/>
+                  <input placeholder="…or paste a photo link" value=${photoUrl} onChange=${e => setPhotoUrl(e.target.value)} aria-label="Photo link"
+                    onKeyDown=${e => { if (e.key === 'Enter') { e.preventDefault(); usePhotoUrl(); } }}/>
+                  <button type="button" className="btn btn-ghost btn-sm" onClick=${usePhotoUrl}>Use</button>
+                </div>
+                <span className="f-hint">Square photos look best. Uploads are cropped to a circle automatically.</span>
+              </div>
+            </div>
+            <input ref=${fileRef} type="file" accept="image/*" hidden onChange=${e => { upload(e.target.files[0]); e.target.value = ''; }}/>
+          </section>
+          <section className="fs">
+            <h4>Intro</h4>
+            <${Field} label="Your name" hint="Your first name shows as “Curated by …” in the header">
+              <input value=${p.name} onChange=${set('name')} placeholder="e.g. Deepesh Jain" maxLength="60" autoFocus/>
+            <//>
+            <${Field} label="Short bio" hint=${p.bio.length + ' / 500'}>
+              <textarea rows="4" maxLength="500" value=${p.bio} onChange=${set('bio')} placeholder="Who you are, what you love buying, why people should trust your picks…"></textarea>
+            <//>
+          </section>
+          <section className="fs">
+            <h4>Social links</h4>
+            <p className="f-hint" style=${{ marginTop: '-6px' }}>Fill in only the ones you use. A @handle or a full link both work.</p>
+            <div className="row2">
+              ${SOCIALS.map(s => html`<${Field} key=${s.key} label=${s.label}>
+                <div className="adorn"><${Icon} name=${s.icon || s.key} size=${16}/><input value=${p.links[s.key]} onChange=${setLink(s.key)} placeholder=${s.ph}
+                  type=${s.key === 'email' ? 'email' : 'text'} inputMode=${s.key === 'email' ? 'email' : 'url'} maxLength="200"/></div>
+              <//>`)}
+            </div>
+            ${err && html`<div className="form-err" role="alert">${err}</div>`}
+          </section>
+        </div>
+      </div>
+      <div className="mf-foot">
+        <button type="button" className="btn btn-ghost" onClick=${tryClose} disabled=${busy}>Cancel</button>
+        <button type="submit" className="btn btn-accent" disabled=${busy}>${busy ? 'Saving…' : 'Save About me'}</button>
+      </div>
+    </form>
+  <//>`;
+}
+
+function AdminBar({ count, hidden, onAdd, onProfile, onSignOut }) {
+  return html`<div className="admin-bar" role="toolbar" aria-label="Admin tools">
+    <span className="ab-status"><i className="dot"></i>Admin${backend.mode === 'local' ? ' · demo' : ''}</span>
+    <span className="ab-count">${count} item${count === 1 ? '' : 's'}${hidden ? ` · ${hidden} hidden` : ''}</span>
+    <button className="btn btn-accent btn-sm" onClick=${onAdd}><${Icon} name="plus" size=${16}/> Add item</button>
+    <button className="btn btn-ghost btn-sm btn-icon" onClick=${onProfile} title="Edit About me" aria-label="Edit About me"><${Icon} name="user" size=${16}/></button>
+    <button className="btn btn-ghost btn-sm btn-icon" onClick=${onSignOut} title="Sign out" aria-label="Sign out"><${Icon} name="logout" size=${16}/></button>
+  </div>`;
+}
+
+/* ---------------- app ---------------- */
+function App() {
+  const [user, setUser] = useState(null);
+  const [authReady, setAuthReady] = useState(false);
+  const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [loadErr, setLoadErr] = useState('');
+  const [q, setQ] = useState('');
+  const [cat, setCat] = useState('All');
+  const [sort, setSort] = useState('recommended');
+  const [editing, setEditing] = useState(null);
+  const [confirmDel, setConfirmDel] = useState(null);
+  const [profile, setProfile] = useState(() => normProfile(null));
+  const [editingProfile, setEditingProfile] = useState(false);
+  const { route, go, back, clear } = useRoute();
+  const [toasts, notify] = useToasts();
+  const admin = !!user;
+
+  useEffect(() => backend.onAuth(u => { setUser(u); setAuthReady(true); }), []);
+  useEffect(() => backend.subscribeProfile(p => setProfile(normProfile(p)), err => console.error(err)), []);
+  useEffect(() => {
+    if (!authReady) return;
+    return backend.subscribe(admin, list => {
+      setItems(list.map(normItem)); setLoading(false); setLoadErr('');
+    }, err => {
+      console.error(err); setLoading(false);
+      setLoadErr(/permission/.test(err.code || '') ? 'The collection is private right now. Check the Firestore rules.' : "Couldn't load the collection. Please refresh the page.");
+    });
+  }, [authReady, admin]);
+
+  const itemId = route.startsWith('item/') ? route.slice(5) : null;
+  const openItem = itemId ? items.find(i => i.id === itemId) : null;
+  useEffect(() => { if (itemId && !loading && !openItem) clear(); }, [itemId, loading, openItem]);
+  useEffect(() => { if (route === 'admin' && authReady && admin) clear(); }, [route, authReady, admin]);
+  const showLogin = route === 'admin' && authReady && !admin;
+
+  const categories = useMemo(() => {
+    const m = new Map();
+    items.forEach(i => m.set(i.category, (m.get(i.category) || 0) + 1));
+    return [...m.entries()].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+  }, [items]);
+  useEffect(() => { if (cat !== 'All' && !categories.some(([c]) => c === cat)) setCat('All'); }, [categories]);
+
+  const shown = useMemo(() => {
+    const tokens = q.toLowerCase().split(/\s+/).filter(Boolean);
+    const list = items.filter(i => (cat === 'All' || i.category === cat) && (!tokens.length || tokens.every(t => haystack(i).includes(t))));
+    return list.sort(SORTS[sort].fn);
+  }, [items, q, cat, sort]);
+
+  const stats = useMemo(() => {
+    const rated = items.filter(i => i.rating > 0), deals = items.filter(i => pctOff(i) > 0);
+    return {
+      avg: rated.length ? rated.reduce((s, i) => s + i.rating, 0) / rated.length : 0,
+      avgOff: deals.length ? Math.round(deals.reduce((s, i) => s + pctOff(i), 0) / deals.length) : 0,
+      hidden: items.filter(i => !i.visible).length,
+    };
+  }, [items]);
+
+  const editItem = it => { if (itemId) back(); setEditing({ item: it }); };
+  const addItem = () => setEditing({ item: null });
+  const saveItem = async (item, added, removed, isNew) => {
+    try {
+      await backend.save(item, added, removed);
+      added.forEach(p => photoData.set(p.pid, p.data));
+      notify(isNew ? 'Added to your warehouse' : 'Changes saved');
+      setEditing(null);
+      return true;
+    } catch (e) { console.error(e); notify(saveMessage(e), 'error'); return false; }
+  };
+  const doDelete = async () => {
+    const it = confirmDel; setConfirmDel(null);
+    try {
+      await backend.remove(it);
+      if (editing && editing.item && editing.item.id === it.id) setEditing(null);
+      notify('Item deleted');
+    } catch (e) { console.error(e); notify(saveMessage(e), 'error'); }
+  };
+  const saveProfile = async p => {
+    try { await backend.saveProfile(p); notify('About me updated'); setEditingProfile(false); return true; }
+    catch (e) { console.error(e); notify(saveMessage(e), 'error'); return false; }
+  };
+  const signOut = async () => { await backend.signOut(); notify('Signed out'); };
+  const clearFilters = () => { setQ(''); setCat('All'); };
+  const filtering = q.trim() || cat !== 'All';
+
+  return html`<div className=${'app' + (admin ? ' is-admin' : '')}>
+    <${Hero} count=${items.length} cats=${categories.length} avg=${stats.avg} avgOff=${stats.avgOff} profile=${profile}/>
+    <${Toolbar} q=${q} setQ=${setQ} cat=${cat} setCat=${setCat} sort=${sort} setSort=${setSort} categories=${categories} total=${items.length}/>
+    <main className="wrap main" id="collection">
+      ${loadErr && html`<div className="notice error" role="alert">${loadErr}</div>`}
+      ${loading
+        ? html`<div className="grid">${Array.from({ length: 8 }).map((_, i) => html`<${Skeleton} key=${i}/>`)}</div>`
+        : items.length === 0 && !loadErr
+          ? html`<div className="empty">
+              <div className="empty-mark">✦</div>
+              <h3>${admin ? 'Your warehouse is empty' : 'The shelves are being stocked'}</h3>
+              <p>${admin ? 'Add the first thing you love: a photo, the price, and the link to buy it.' : 'New finds are on their way. Check back soon.'}</p>
+              ${admin && html`<button className="btn btn-accent btn-lg" onClick=${addItem}><${Icon} name="plus"/> Add your first item</button>`}
+            </div>`
+          : shown.length === 0 && items.length > 0
+            ? html`<div className="empty">
+                <div className="empty-mark"><${Icon} name="search" size=${30}/></div>
+                <h3>Nothing matches that</h3>
+                <p>Try another word, or browse a different category.</p>
+                <button className="btn btn-ghost" onClick=${clearFilters}>Clear filters</button>
+              </div>`
+            : html`<${React.Fragment}>
+                ${filtering && html`<div className="result-line">Showing ${shown.length} of ${items.length} items <button className="link-btn" onClick=${clearFilters}>Clear filters</button></div>`}
+                <div className="grid">
+                  ${shown.map((it, i) => html`<${Card} key=${it.id} item=${it} index=${i} admin=${admin}
+                    onOpen=${() => go('item/' + it.id)} onEdit=${editItem} onDelete=${setConfirmDel}/>`)}
+                </div>
+              <//>`}
+    </main>
+    <${About} profile=${profile} admin=${admin} onEdit=${() => setEditingProfile(true)}/>
+    <footer className="footer">
+      <div className="wrap">
+        <div className="f-brand">✦ My Warehouse</div>
+        <p>Things I’ve bought and would recommend. Prices are what I paid, so the store’s current price may differ.</p>
+        <p className="f-copy">© ${new Date().getFullYear()} · Curated with care</p>
+      </div>
+    </footer>
+    ${admin && html`<${AdminBar} count=${items.length} hidden=${stats.hidden} onAdd=${addItem} onProfile=${() => setEditingProfile(true)} onSignOut=${signOut}/>`}
+    ${editingProfile && html`<${ProfileForm} initial=${profile} onClose=${() => setEditingProfile(false)} onSave=${saveProfile} notify=${notify}/>`}
+    ${openItem && html`<${ItemModal} item=${openItem} admin=${admin} onClose=${back} onEdit=${editItem} notify=${notify}
+        onTag=${t => { setQ(t); setCat('All'); back(); }}/>`}
+    ${showLogin && html`<${LoginModal} onClose=${back} onDone=${() => { clear(); notify('Signed in. Admin mode is on.'); }}/>`}
+    ${editing && html`<${ItemForm} initial=${editing.item} categories=${categories.map(c => c[0])}
+        onClose=${() => setEditing(null)} onSave=${saveItem} onDelete=${setConfirmDel} notify=${notify}/>`}
+    ${confirmDel && html`<${Confirm} title="Delete this item?" confirmLabel="Delete"
+        body=${`“${confirmDel.name}” will be removed from your warehouse for good.`}
+        onCancel=${() => setConfirmDel(null)} onConfirm=${doDelete}/>`}
+    <${Toasts} items=${toasts}/>
+  </div>`;
+}
+
+ReactDOM.createRoot(document.getElementById('root')).render(html`<${App}/>`);
+</script>
+</body>
+</html>
